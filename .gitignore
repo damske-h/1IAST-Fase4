@@ -1,0 +1,13 @@
+# Dados e artefatos gerados (baixe com: python scripts/get_data.py)
+data/raw/*
+data/interim/*
+data/processed/*
+artifacts/*
+!**/.gitkeep
+
+# Ambiente e caches
+.venv/
+__pycache__/
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/

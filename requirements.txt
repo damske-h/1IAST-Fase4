@@ -1,0 +1,3 @@
+# Instala o pacote do projeto (src/voc_rag) em modo editável + ferramentas de dev.
+# Uso: pip install -r requirements.txt
+-e .[dev]
