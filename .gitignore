@@ -1,4 +1,4 @@
-# Dados e artefatos gerados (baixe com: python scripts/get_data.py)
+# Dados e artefatos gerados (baixe com: python -m voc_rag.dados)
 data/raw/*
 data/interim/*
 data/processed/*
@@ -11,3 +11,6 @@ __pycache__/
 *.egg-info/
 .ipynb_checkpoints/
 .pytest_cache/
+
+# Segredos: a chave do LLM fica só na sua máquina
+.env

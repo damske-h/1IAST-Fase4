@@ -15,6 +15,7 @@ PASTA_ARTEFATOS = RAIZ / "artifacts"             # índices FAISS/BM25 e manifes
 
 ARQUIVO_BASE = PASTA_PROCESSADOS / "base_conhecimento_reviews.csv"
 PASTA_INDICE_VETORIAL = PASTA_ARTEFATOS / "indice_vetorial"  # embeddings + manifesto
+ARQUIVO_AUDITORIA = PASTA_ARTEFATOS / "logs" / "auditoria.jsonl"  # log do RAG: hashes, sem texto
 
 # --- Fonte dos dados ----------------------------------------------------------
 DATASET_KAGGLE = "olistbr/brazilian-ecommerce"
@@ -36,3 +37,8 @@ PROFUNDIDADE_FUSAO = 50 # candidatos de cada busca que entram na fusão híbrida
 MIN_PALAVRAS_EVIDENCIA = 3  # reviews com menos palavras não servem de evidência citada
 LIMIAR_EVIDENCIA = 0.55 # similaridade mínima do top-1 para haver evidência (provisório, Etapa 3)
 SEMENTE = 42            # amostras e exemplos reprodutíveis
+
+# --- Pipeline RAG ---------------------------------------------------------------
+QTD_VARIACOES = 3       # reformulações que o Multi-Query pede ao LLM (além da consulta original)
+MIN_EVIDENCIAS = 2      # reviews relevantes mínimas para responder; abaixo disso o RAG recusa
+K_CONTEXTO = 10         # reviews do Multi-Query que vão para a checagem e para o prompt

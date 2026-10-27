@@ -46,6 +46,15 @@ PERGUNTAS_FORA_DE_ESCOPO = [
     "quem ganhou a copa do mundo de 2002?",
 ]
 
+# Do domínio (e-commerce, entrega, produto), mas sem resposta esperada nas reviews da
+# Olist de 2016-2018: o caso difícil da recusa, em que a similaridade engana.
+PERGUNTAS_SEM_EVIDENCIA = [
+    "os clientes elogiam a entrega feita por drone?",
+    "o que acham do programa de cashback em criptomoeda?",
+    "reclamações sobre o atendimento na loja física da Olist",
+    "os clientes gostaram da experiência de compra no metaverso?",
+]
+
 
 def precisao_em_k(resultado, padrao):
     """Fração do top-k cujo texto casa com o padrão de relevância."""
