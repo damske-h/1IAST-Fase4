@@ -35,7 +35,7 @@ def tela_rag(documentos, app):
     st.write("Exemplos:")
     colunas = st.columns(3)
     for i, exemplo in enumerate(demo.PERGUNTAS_EXEMPLO):
-        if colunas[i % 3].button(exemplo, key=f"exemplo_{i}", use_container_width=True):
+        if colunas[i % 3].button(exemplo, key=f"exemplo_{i}", width="stretch"):
             st.session_state["pergunta"] = exemplo
 
     with st.form("pergunta_form"):
@@ -55,13 +55,13 @@ def tela_rag(documentos, app):
             st.markdown(f"- {ponto.afirmacao} " + " ".join(f"`{rid[:8]}`" for rid in ponto.review_ids))
         if r.evidencias:
             st.subheader(f"Evidências citadas ({len(r.evidencias)})")
-            st.dataframe(demo.tabela_evidencias(r), hide_index=True, use_container_width=True)
+            st.dataframe(demo.tabela_evidencias(r), hide_index=True, width="stretch")
         if r.status != "respondida":
             st.caption(f"Motivo: {r.motivo}")
 
         if mostrar_trilha:
             with st.expander("Como o RAG chegou aqui", expanded=r.status != "respondida"):
-                st.dataframe(demo.passos(estado["trilha"]), hide_index=True, use_container_width=True)
+                st.dataframe(demo.passos(estado["trilha"]), hide_index=True, width="stretch")
                 st.write("Filtros aplicados:", r.filtros or "nenhum")
                 if r.consultas:
                     st.write("Consultas do Multi-Query:", r.consultas)
@@ -90,8 +90,8 @@ with aba_avaliacao:
         st.info("O cache da avaliação não está nesta cópia do repositório.")
     else:
         st.subheader("Teste trancado (20 perguntas, rodado uma vez): baseline B0 x sistema final H5")
-        st.dataframe(tabelas["teste"], use_container_width=True)
+        st.dataframe(tabelas["teste"], width="stretch")
         st.subheader("Dev (40 perguntas): baseline e hipóteses H1 a H5")
-        st.dataframe(tabelas["dev"], use_container_width=True)
+        st.dataframe(tabelas["dev"], width="stretch")
         st.subheader("Matriz de recusa no dev")
-        st.dataframe(tabelas["dev_recusa"], use_container_width=True)
+        st.dataframe(tabelas["dev_recusa"], width="stretch")
