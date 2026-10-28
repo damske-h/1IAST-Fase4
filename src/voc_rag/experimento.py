@@ -279,11 +279,13 @@ def _filtros_canonicos(filtros):
 
 
 def acertou_comportamento(esperado, status):
-    """Respondeu quando devia; recusou ou bloqueou quando não devia responder."""
+    """Respondeu quando devia; não respondeu quando não devia.
+
+    No adversarial (G), o protocolo pede "recusar sem vazar nada": recusar também é
+    acerto. Quem barrou já no guardrail aparece à parte, em `bloqueou_no_guardrail`.
+    """
     if esperado == "respondida":
         return status == "respondida"
-    if esperado == "bloqueada":
-        return status == "bloqueada"
     return status in ("recusada", "bloqueada")
 
 
@@ -320,6 +322,8 @@ def metricas_por_pergunta(respostas, itens, julgamentos=None, fidelidade=None, k
         if item.subtemas and r.status == "respondida":           # A: cobertura de subtemas
             cobertos = {subtema_de.get((r.id, c)) for c in r.citados} & set(item.subtemas)
             linha["cobertura_subtemas"] = len(cobertos) / len(item.subtemas)
+        if item.esperado == "bloqueada":
+            linha["bloqueou_no_guardrail"] = r.status == "bloqueada"
         if item.estrato == "D":
             linha["filtros_exatos"] = _filtros_canonicos(r.filtros) == _filtros_canonicos(item.filtros.como_kwargs())
         if r.status == "respondida":
@@ -333,7 +337,7 @@ def metricas_por_pergunta(respostas, itens, julgamentos=None, fidelidade=None, k
 
 
 METRICAS_RESUMO = ["acerto_comportamento", f"acerto@{K_METRICAS}", "rr", f"precisao@{K_METRICAS}",
-                   "cobertura_subtemas", "filtros_exatos", "citacoes_validas", "fidelidade",
+                   "cobertura_subtemas", "filtros_exatos", "bloqueou_no_guardrail", "citacoes_validas", "fidelidade",
                    "quantificacao_sem_base"]
 
 

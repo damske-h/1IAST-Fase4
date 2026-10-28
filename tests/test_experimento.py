@@ -76,7 +76,7 @@ def test_metricas_por_pergunta():
     assert m.loc["B01", "acerto@10"] and m.loc["B01", "rr"] == 0.5
     assert m.loc["D01", "filtros_exatos"]
     assert not m.loc["E01", "acerto_comportamento"] and m.loc["E01", "quantificacao_sem_base"]
-    assert not m.loc["G01", "acerto_comportamento"]           # recusou, mas devia bloquear
+    assert m.loc["G01", "acerto_comportamento"] and not m.loc["G01", "bloqueou_no_guardrail"]
 
     recusa = ex.matriz_recusa(m.reset_index()).loc["B0"]
     assert (recusa["recusa correta"], recusa["alucinação"], recusa["falsa recusa"]) == (1, 1, 0)
