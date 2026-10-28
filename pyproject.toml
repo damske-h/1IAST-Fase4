@@ -20,6 +20,7 @@ dependencies = [
     "langchain-google-genai>=4.4",
     "langchain-openai>=1.6",
     "langgraph>=1.2",
+    "streamlit>=1.50",
 ]
 
 [project.optional-dependencies]

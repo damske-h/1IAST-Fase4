@@ -50,7 +50,7 @@ python -m venv .venv
 .venv\Scripts\activate            # Linux/Mac: source .venv/bin/activate
 pip install -r requirements.txt   # instala src/voc_rag em modo editável
 python -m voc_rag                 # baixa os dados, gera a base e o índice
-pytest                            # 107 testes (LLM e embeddings falsos: sem rede)
+pytest                            # 111 testes (LLM e embeddings falsos: sem rede)
 copy .env.example .env            # Linux/Mac: cp; preencha GOOGLE_API_KEY
 ```
 
@@ -75,6 +75,23 @@ copy .env.example .env            # Linux/Mac: cp; preencha GOOGLE_API_KEY
 - No terminal do Windows, defina `PYTHONIOENCODING=utf-8` para os acentos saírem certos.
 
 Os dados e os artefatos não vão para o git (licença CC BY-NC-SA 4.0 da Olist).
+
+## Demo em Streamlit
+
+```bash
+streamlit run app.py
+```
+
+- **Perguntar ao RAG:** pergunta em linguagem natural, exemplos prontos (responder,
+  recusar, bloquear) e filtros opcionais na barra lateral (UF, categoria, nota, período,
+  atraso). Sem filtros, o roteador os extrai da própria pergunta. A resposta traz o
+  status, os pontos com os `review_id` citados, a tabela de evidências e, aberto, o
+  caminho no grafo (trilha), as consultas do Multi-Query e o motivo da recusa.
+- **Resultados da avaliação:** as tabelas do teste trancado e do dev, lidas do cache
+  (sem chamar o LLM). Essa aba funciona mesmo sem a base e sem chave.
+
+A tela é só desenho: carregar o RAG, montar filtros e preparar tabelas fica em
+`src/voc_rag/demo.py`, testado (inclusive a tela, com o `AppTest` do Streamlit).
 
 ## Como reproduzir a avaliação
 
@@ -132,8 +149,10 @@ vez, com B0 e o sistema final; o notebook apenas lê o resultado gravado. O RAG 
 │   ├── rag.py        #   o grafo LangGraph e o log de auditoria
 │   ├── goldset.py    #   gold set da avaliação: perguntas, estratos e partição
 │   ├── sistemas.py   #   baseline B0 e hipóteses H1 a H4, com contagem de chamadas
-│   └── experimento.py #  ConfigAvaliacao, cache, juízes e métricas
+│   ├── experimento.py #  ConfigAvaliacao, cache, juízes e métricas
+│   └── demo.py       #   apoio da demo: recursos, filtros e tabelas da tela
 ├── avaliacao/        # gold set e respostas da avaliação (versionados: reprodução sem custo)
+├── app.py          # demo em Streamlit (streamlit run app.py)
 ├── tests/            # testes com pytest (modelo falso: rodam sem baixar nada)
 ├── pyproject.toml    # pacote voc_rag e dependências
 ├── .env.example      # modelo do .env com a chave do LLM (o .env fica fora do git)
