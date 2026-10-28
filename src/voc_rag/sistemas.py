@@ -13,7 +13,8 @@ muda uma variável em relação ao anterior, para o ganho ter causa conhecida:
 | H5 | H4 com `MIN_EVIDENCIAS=1` | sim | sim | idem, uma review basta | 4 |
 
 H5 nasceu da análise de erro da rodada dev: o H4 recusava agulhas mesmo com a
-review certa no top-10, porque exigia 2 evidências e a agulha só tem uma.
+review certa no top-10, porque exigia 2 evidências e a agulha só tem uma. H5 venceu
+no dev e virou o padrão do RAG (`config.MIN_EVIDENCIAS = 1`); o H4 fica fixo em 2.
 
 B0 a H3 usam o gerador da aula 02: responde só com as reviews, cita os ids e
 recusa pelo próprio prompt. As citações saem como o LLM escreveu, sem filtro,
@@ -131,7 +132,7 @@ def criar_sistemas(documentos, buscador, llm, nomes=tuple(SISTEMAS), k=K_CONTEXT
 
     construtores = {"B0": lambda: busca_simples("vetorial"), "H1": lambda: busca_simples("hibrida"),
                     "H2": lambda: com_multi_query, "H3": lambda: h3,
-                    "H4": lambda: grafo(MIN_EVIDENCIAS), "H5": lambda: grafo(1)}
+                    "H4": lambda: grafo(2), "H5": lambda: grafo(MIN_EVIDENCIAS)}
     return {nome: construtores[nome]() for nome in nomes}
 
 

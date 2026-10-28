@@ -44,9 +44,17 @@ def test_juiz_filtra_e_descarta_id_inventado(resultado):
 
 
 def test_juiz_reprova_e_rag_recusa(resultado):
-    llm = LLMFalso({"relevantes": ["r1"], "motivo": "só uma fala do assunto"})
+    llm = LLMFalso({"relevantes": [], "motivo": "nenhuma fala de drone"})
     d = evidencia.checar_evidencia(resultado, "entrega por drone?", juiz=evidencia.criar_juiz(llm))
-    assert not d.tem_evidencia and d.review_ids == [] and d.aprovadas_pelo_juiz == 1
+    assert not d.tem_evidencia and d.review_ids == [] and d.aprovadas_pelo_juiz == 0
+
+
+def test_min_evidencias_2_recusa_uma_so(resultado):
+    llm = LLMFalso({"relevantes": ["r1"], "motivo": "só uma fala do assunto"})
+    juiz = evidencia.criar_juiz(llm)
+    assert evidencia.checar_evidencia(resultado, "x?", juiz=juiz, min_evidencias=1).tem_evidencia
+    d = evidencia.checar_evidencia(resultado, "x?", juiz=juiz, min_evidencias=2)
+    assert not d.tem_evidencia and d.aprovadas_pelo_juiz == 1
 
 
 def test_juiz_falhou_recusa(resultado):

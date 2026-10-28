@@ -50,7 +50,7 @@ python -m venv .venv
 .venv\Scripts\activate            # Linux/Mac: source .venv/bin/activate
 pip install -r requirements.txt   # instala src/voc_rag em modo editável
 python -m voc_rag                 # baixa os dados, gera a base e o índice
-pytest                            # 106 testes (LLM e embeddings falsos: sem rede)
+pytest                            # 107 testes (LLM e embeddings falsos: sem rede)
 copy .env.example .env            # Linux/Mac: cp; preencha GOOGLE_API_KEY
 ```
 
