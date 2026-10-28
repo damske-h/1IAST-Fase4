@@ -99,7 +99,8 @@ def documentos():
                          "ano_mes": ["2018-01"] * 3})
 
 
-def test_juizes_gravam_e_nao_repetem(tmp_path, documentos):
+def test_juizes_gravam_e_nao_repetem(tmp_path, documentos, monkeypatch):
+    monkeypatch.setattr(ex, "PASTA_RESPOSTAS", tmp_path / "versionado")   # isola do cache real
     config = ex.ConfigAvaliacao(sistemas=["B0"], modo="ao_vivo", pasta=tmp_path)
     respostas = pd.DataFrame([_resp("B0", "A01"), _resp("B0", "E01", "recusada")])
     llm = LLMFalso({"JulgamentoRelevancia": {"rotulos": [
