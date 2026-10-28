@@ -50,7 +50,7 @@ python -m venv .venv
 .venv\Scripts\activate            # Linux/Mac: source .venv/bin/activate
 pip install -r requirements.txt   # instala src/voc_rag em modo editável
 python -m voc_rag                 # baixa os dados, gera a base e o índice
-pytest                            # 77 testes (LLM e embeddings falsos: sem rede)
+pytest                            # 104 testes (LLM e embeddings falsos: sem rede)
 copy .env.example .env            # Linux/Mac: cp; preencha GOOGLE_API_KEY
 ```
 
@@ -75,6 +75,33 @@ copy .env.example .env            # Linux/Mac: cp; preencha GOOGLE_API_KEY
 - No terminal do Windows, defina `PYTHONIOENCODING=utf-8` para os acentos saírem certos.
 
 Os dados e os artefatos não vão para o git (licença CC BY-NC-SA 4.0 da Olist).
+
+## Como reproduzir a avaliação
+
+A avaliação (notebook `10_avaliacao.ipynb`) compara a baseline B0 com as hipóteses H1 a H4
+nas 60 perguntas do gold set. Ela foi **rodada uma vez** e tudo ficou versionado em
+`avaliacao/`:
+
+| Arquivo | Conteúdo |
+|---|---|
+| `avaliacao/gold_set.csv` | as 60 perguntas, estrato, partição dev/teste e gabarito |
+| `avaliacao/respostas/{particao}_{sistema}.csv` | a resposta de cada sistema a cada pergunta, com chamadas e tokens |
+| `avaliacao/respostas/julgamentos.csv` | relevância das reviews recuperadas (pooling) |
+| `avaliacao/respostas/{particao}_{sistema}_fidelidade.csv` | veredicto do juiz para cada afirmação |
+
+Há dois modos, escolhidos na `ConfigAvaliacao` da primeira seção do notebook:
+
+- **`modo="cache"` (padrão): custo zero.** O notebook só lê esses CSVs e recalcula as
+  métricas e tabelas. Não precisa de chave, nem de baixar os dados ou gerar o índice.
+- **`modo="ao_vivo"`: para ver o pipeline rodando.** Por exemplo,
+  `ConfigAvaliacao(modo="ao_vivo", max_perguntas=3, sistemas=["B0", "H4"])` roda três
+  perguntas com a chave do `.env` de quem executa (alguns centavos). Antes de rodar, o
+  notebook mostra o teto de chamadas. O resultado vai para `artifacts/avaliacao/ao_vivo/`,
+  fora do git, e não altera o cache.
+
+O **teste trancado** (20 perguntas) só abre com `abrir_teste=True` e foi rodado uma única
+vez, com B0 e o sistema final; o notebook apenas lê o resultado gravado. O RAG ao vivo
+(notebook 09 e demo) sempre precisa da chave; a avaliação, não.
 
 ## Estrutura
 
@@ -102,7 +129,11 @@ Os dados e os artefatos não vão para o git (licença CC BY-NC-SA 4.0 da Olist)
 │   ├── multiquery.py #   reformulações da consulta + RRF entre as buscas
 │   ├── evidencia.py  #   contexto delimitado, juiz LLM e decisão de recusa
 │   ├── geracao.py    #   resposta com citações checadas e PII mascarada
-│   └── rag.py        #   o grafo LangGraph e o log de auditoria
+│   ├── rag.py        #   o grafo LangGraph e o log de auditoria
+│   ├── goldset.py    #   gold set da avaliação: perguntas, estratos e partição
+│   ├── sistemas.py   #   baseline B0 e hipóteses H1 a H4, com contagem de chamadas
+│   └── experimento.py #  ConfigAvaliacao, cache, juízes e métricas
+├── avaliacao/        # gold set e respostas da avaliação (versionados: reprodução sem custo)
 ├── tests/            # testes com pytest (modelo falso: rodam sem baixar nada)
 ├── pyproject.toml    # pacote voc_rag e dependências
 ├── .env.example      # modelo do .env com a chave do LLM (o .env fica fora do git)
@@ -128,6 +159,7 @@ decisão**, citando a aula de origem. Cada etapa também roda pela linha de coma
 | `07_evidencia_recusa.ipynb` | limiar de similaridade, contexto delimitado, juiz LLM, recusa | LangChain 02 · IA Gen 02, 06 |
 | `08_geracao_resposta.ipynb` | resposta JSON com citação obrigatória, validação de citações, ataques à saída | LangChain 02, 04 · IA Gen 06 |
 | `09_rag_langgraph.ipynb` | `StateGraph`, arestas condicionais, bateria responder/recusar/bloquear, auditoria | LangChain 05 · IA Gen 06 |
+| `10_avaliacao.ipynb` | baseline x hipóteses, gold set, acerto@10/MRR, matriz de recusa, fidelidade com juiz, custo, análise de erro, teste trancado | IA Gen 02 · DL 06 |
 
 ## A base de conhecimento em números
 

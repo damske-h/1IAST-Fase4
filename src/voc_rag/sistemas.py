@@ -135,6 +135,7 @@ class ContadorLLM(BaseCallbackHandler):
         self.chamadas = 0
         self.tokens_entrada = 0
         self.tokens_saida = 0
+        self.tokens_raciocinio = 0   # modelos que "pensam" cobram o raciocínio como saída
 
     def on_chat_model_start(self, serialized, messages, **kwargs):
         self.chamadas += 1
@@ -145,6 +146,7 @@ class ContadorLLM(BaseCallbackHandler):
                 uso = getattr(getattr(geracao, "message", None), "usage_metadata", None) or {}
                 self.tokens_entrada += uso.get("input_tokens", 0)
                 self.tokens_saida += uso.get("output_tokens", 0)
+                self.tokens_raciocinio += (uso.get("output_token_details") or {}).get("reasoning", 0)
 
 
 class Resultado(BaseModel):
@@ -163,6 +165,7 @@ class Resultado(BaseModel):
     chamadas: int = 0
     tokens_entrada: int = 0
     tokens_saida: int = 0
+    tokens_raciocinio: int = 0
     latencia_ms: int = 0
 
     def como_linha(self):
@@ -187,4 +190,5 @@ def responder(nome, sistema, item):
         saida = {"status": "erro", "avisos": [f"{type(erro).__name__}: {_mascarar_segredos(erro)[:120]}"]}
     return Resultado(sistema=nome, id=item.id, **saida, chamadas=contador.chamadas,
                      tokens_entrada=contador.tokens_entrada, tokens_saida=contador.tokens_saida,
+                     tokens_raciocinio=contador.tokens_raciocinio,
                      latencia_ms=round((time.perf_counter() - inicio) * 1000))
