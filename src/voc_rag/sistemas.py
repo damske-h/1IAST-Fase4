@@ -10,6 +10,10 @@ muda uma variável em relação ao anterior, para o ganho ter causa conhecida:
 | H2 | híbrida | sim | não | só no prompt | 2 |
 | H3 | híbrida | sim | sim | prompt + roteador (fora de escopo) | 3 |
 | H4 | o RAG completo (notebook 09) | sim | sim | guardrail + limiar + juiz | 4 |
+| H5 | H4 com `MIN_EVIDENCIAS=1` | sim | sim | idem, uma review basta | 4 |
+
+H5 nasceu da análise de erro da rodada dev: o H4 recusava agulhas mesmo com a
+review certa no top-10, porque exigia 2 evidências e a agulha só tem uma.
 
 B0 a H3 usam o gerador da aula 02: responde só com as reviews, cita os ids e
 recusa pelo próprio prompt. As citações saem como o LLM escreveu, sem filtro,
@@ -30,7 +34,7 @@ from pydantic import BaseModel, Field
 
 from voc_rag import multiquery, rag, roteador
 from voc_rag.busca import posicoes_permitidas
-from voc_rag.config import K_CONTEXTO
+from voc_rag.config import K_CONTEXTO, MIN_EVIDENCIAS
 from voc_rag.evidencia import MENSAGEM_RECUSA, formatar_contexto
 from voc_rag.llm import _mascarar_segredos
 from voc_rag.schemas import Pergunta, Ponto
@@ -41,9 +45,10 @@ SISTEMAS = {
     "H2": "H1 + Multi-Query",
     "H3": "H2 + roteador com filtros por metadado",
     "H4": "H3 + guardrail e checagem de evidência (o RAG completo)",
+    "H5": "H4 com MIN_EVIDENCIAS=1: uma review basta (agulhas)",
 }
 # Máximo por pergunta; recusas e bloqueios gastam menos (o H4 bloqueado não chama nada).
-CHAMADAS_POR_PERGUNTA = {"B0": 1, "H1": 1, "H2": 2, "H3": 3, "H4": 4}
+CHAMADAS_POR_PERGUNTA = {"B0": 1, "H1": 1, "H2": 2, "H3": 3, "H4": 4, "H5": 4}
 
 
 # --- Gerador da baseline (aula 02) ------------------------------------------------------
@@ -111,20 +116,23 @@ def criar_sistemas(documentos, buscador, llm, nomes=tuple(SISTEMAS), k=K_CONTEXT
         saida = com_multi_query(pergunta, rot.consulta, rot.filtros.como_kwargs())
         return {**saida, "avisos": avisos + saida["avisos"]}
 
-    app = rag.criar_rag(documentos, buscador, llm, k=k, caminho_log=None) if "H4" in nomes else None
+    def grafo(min_evidencias):
+        app = rag.criar_rag(documentos, buscador, llm, k=k, min_evidencias=min_evidencias, caminho_log=None)
 
-    def h4(pergunta):
-        estado = rag.responder(app, pergunta)
-        r = estado["resposta"]
-        recuperados = estado.get("recuperados")
-        return {"status": r.status, "resumo": r.resumo, "pontos": r.pontos,
-                "recuperados": [] if recuperados is None else recuperados["review_id"].tolist(),
-                "citados": [e.review_id for e in r.evidencias], "consultas": r.consultas,
-                "filtros": r.filtros, "avisos": r.avisos}
+        def sistema(pergunta):
+            estado = rag.responder(app, pergunta)
+            r = estado["resposta"]
+            recuperados = estado.get("recuperados")
+            return {"status": r.status, "resumo": r.resumo, "pontos": r.pontos, "motivo": r.motivo,
+                    "recuperados": [] if recuperados is None else recuperados["review_id"].tolist(),
+                    "citados": [e.review_id for e in r.evidencias], "consultas": r.consultas,
+                    "filtros": r.filtros, "avisos": r.avisos}
+        return sistema
 
-    todos = {"B0": busca_simples("vetorial"), "H1": busca_simples("hibrida"),
-             "H2": com_multi_query, "H3": h3, "H4": h4}
-    return {nome: todos[nome] for nome in nomes}
+    construtores = {"B0": lambda: busca_simples("vetorial"), "H1": lambda: busca_simples("hibrida"),
+                    "H2": lambda: com_multi_query, "H3": lambda: h3,
+                    "H4": lambda: grafo(MIN_EVIDENCIAS), "H5": lambda: grafo(1)}
+    return {nome: construtores[nome]() for nome in nomes}
 
 
 # --- Contagem de chamadas e tokens -----------------------------------------------------------
@@ -156,6 +164,7 @@ class Resultado(BaseModel):
     id: str
     status: Literal["respondida", "recusada", "bloqueada", "erro"]
     resumo: str = ""
+    motivo: str = ""                                       # H4/H5: por que respondeu ou recusou
     pontos: list[Ponto] = Field(default_factory=list)
     recuperados: list[str] = Field(default_factory=list)   # o top-k que foi ao LLM, em ordem
     citados: list[str] = Field(default_factory=list)       # como saíram da resposta

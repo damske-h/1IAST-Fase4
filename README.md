@@ -50,7 +50,7 @@ python -m venv .venv
 .venv\Scripts\activate            # Linux/Mac: source .venv/bin/activate
 pip install -r requirements.txt   # instala src/voc_rag em modo editável
 python -m voc_rag                 # baixa os dados, gera a base e o índice
-pytest                            # 104 testes (LLM e embeddings falsos: sem rede)
+pytest                            # 106 testes (LLM e embeddings falsos: sem rede)
 copy .env.example .env            # Linux/Mac: cp; preencha GOOGLE_API_KEY
 ```
 
@@ -78,7 +78,7 @@ Os dados e os artefatos não vão para o git (licença CC BY-NC-SA 4.0 da Olist)
 
 ## Como reproduzir a avaliação
 
-A avaliação (notebook `10_avaliacao.ipynb`) compara a baseline B0 com as hipóteses H1 a H4
+A avaliação (notebook `10_avaliacao.ipynb`) compara a baseline B0 com as hipóteses H1 a H5
 nas 60 perguntas do gold set. Ela foi **rodada uma vez** e tudo ficou versionado em
 `avaliacao/`:
 

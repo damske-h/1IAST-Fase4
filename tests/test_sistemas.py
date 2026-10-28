@@ -107,3 +107,12 @@ def test_resultado_vira_linha_de_csv():
                            filtros={"periodo": ("2018-01", "2018-06")})
     linha = r.como_linha()
     assert linha["citados"] == '["r0"]' and linha["filtros"] == '{"periodo": ["2018-01", "2018-06"]}'
+
+
+def test_h5_responde_com_uma_evidencia_e_o_h4_recusa(montar):
+    todos, _ = montar(JulgamentoEvidencia={"relevantes": ["r0"], "motivo": "só uma fala disso"},
+                      RespostaGerada={"resumo": "x", "pontos": [{"afirmacao": "Não chegou", "review_ids": ["r0"]}]})
+    h4 = sistemas.responder("H4", todos["H4"], _item())
+    h5 = sistemas.responder("H5", todos["H5"], _item())
+    assert h4.status == "recusada" and "mínimo 2" in h4.motivo
+    assert h5.status == "respondida" and h5.citados == ["r0"]

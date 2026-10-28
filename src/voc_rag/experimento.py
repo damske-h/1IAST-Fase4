@@ -40,7 +40,7 @@ K_METRICAS = 10
 class ConfigAvaliacao(BaseModel):
     """Tudo o que muda o custo de uma rodada, num lugar só."""
 
-    sistemas: list[Literal["B0", "H1", "H2", "H3", "H4"]] = Field(default_factory=lambda: list(SISTEMAS))
+    sistemas: list[Literal["B0", "H1", "H2", "H3", "H4", "H5"]] = Field(default_factory=lambda: list(SISTEMAS))
     particao: Literal["dev", "teste"] = "dev"
     abrir_teste: bool = False          # o teste é trancado: só abre de propósito, uma vez
     modo: Literal["cache", "ao_vivo"] = "cache"
