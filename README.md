@@ -50,7 +50,7 @@ python -m venv .venv
 .venv\Scripts\activate            # Linux/Mac: source .venv/bin/activate
 pip install -r requirements.txt   # instala src/voc_rag em modo editável
 python -m voc_rag                 # baixa os dados, gera a base e o índice
-pytest                            # 77 testes (LLM e embeddings falsos: sem rede)
+pytest                            # 107 testes (LLM e embeddings falsos: sem rede)
 copy .env.example .env            # Linux/Mac: cp; preencha GOOGLE_API_KEY
 ```
 
@@ -75,6 +75,33 @@ copy .env.example .env            # Linux/Mac: cp; preencha GOOGLE_API_KEY
 - No terminal do Windows, defina `PYTHONIOENCODING=utf-8` para os acentos saírem certos.
 
 Os dados e os artefatos não vão para o git (licença CC BY-NC-SA 4.0 da Olist).
+
+## Como reproduzir a avaliação
+
+A avaliação (notebook `10_avaliacao.ipynb`) compara a baseline B0 com as hipóteses H1 a H5
+nas 60 perguntas do gold set. Ela foi **rodada uma vez** e tudo ficou versionado em
+`avaliacao/`:
+
+| Arquivo | Conteúdo |
+|---|---|
+| `avaliacao/gold_set.csv` | as 60 perguntas, estrato, partição dev/teste e gabarito |
+| `avaliacao/respostas/{particao}_{sistema}.csv` | a resposta de cada sistema a cada pergunta, com chamadas e tokens |
+| `avaliacao/respostas/julgamentos.csv` | relevância das reviews recuperadas (pooling) |
+| `avaliacao/respostas/{particao}_{sistema}_fidelidade.csv` | veredicto do juiz para cada afirmação |
+
+Há dois modos, escolhidos na `ConfigAvaliacao` da primeira seção do notebook:
+
+- **`modo="cache"` (padrão): custo zero.** O notebook só lê esses CSVs e recalcula as
+  métricas e tabelas. Não precisa de chave, nem de baixar os dados ou gerar o índice.
+- **`modo="ao_vivo"`: para ver o pipeline rodando.** Por exemplo,
+  `ConfigAvaliacao(modo="ao_vivo", max_perguntas=3, sistemas=["B0", "H4"])` roda três
+  perguntas com a chave do `.env` de quem executa (alguns centavos). Antes de rodar, o
+  notebook mostra o teto de chamadas. O resultado vai para `artifacts/avaliacao/ao_vivo/`,
+  fora do git, e não altera o cache.
+
+O **teste trancado** (20 perguntas) só abre com `abrir_teste=True` e foi rodado uma única
+vez, com B0 e o sistema final; o notebook apenas lê o resultado gravado. O RAG ao vivo
+(notebook 09 e demo) sempre precisa da chave; a avaliação, não.
 
 ## Estrutura
 
@@ -102,7 +129,11 @@ Os dados e os artefatos não vão para o git (licença CC BY-NC-SA 4.0 da Olist)
 │   ├── multiquery.py #   reformulações da consulta + RRF entre as buscas
 │   ├── evidencia.py  #   contexto delimitado, juiz LLM e decisão de recusa
 │   ├── geracao.py    #   resposta com citações checadas e PII mascarada
-│   └── rag.py        #   o grafo LangGraph e o log de auditoria
+│   ├── rag.py        #   o grafo LangGraph e o log de auditoria
+│   ├── goldset.py    #   gold set da avaliação: perguntas, estratos e partição
+│   ├── sistemas.py   #   baseline B0 e hipóteses H1 a H4, com contagem de chamadas
+│   └── experimento.py #  ConfigAvaliacao, cache, juízes e métricas
+├── avaliacao/        # gold set e respostas da avaliação (versionados: reprodução sem custo)
 ├── tests/            # testes com pytest (modelo falso: rodam sem baixar nada)
 ├── pyproject.toml    # pacote voc_rag e dependências
 ├── .env.example      # modelo do .env com a chave do LLM (o .env fica fora do git)
@@ -128,6 +159,7 @@ decisão**, citando a aula de origem. Cada etapa também roda pela linha de coma
 | `07_evidencia_recusa.ipynb` | limiar de similaridade, contexto delimitado, juiz LLM, recusa | LangChain 02 · IA Gen 02, 06 |
 | `08_geracao_resposta.ipynb` | resposta JSON com citação obrigatória, validação de citações, ataques à saída | LangChain 02, 04 · IA Gen 06 |
 | `09_rag_langgraph.ipynb` | `StateGraph`, arestas condicionais, bateria responder/recusar/bloquear, auditoria | LangChain 05 · IA Gen 06 |
+| `10_avaliacao.ipynb` | baseline x hipóteses, gold set, acerto@10/MRR, matriz de recusa, fidelidade com juiz, custo, análise de erro, teste trancado | IA Gen 02 · DL 06 |
 
 ## A base de conhecimento em números
 
@@ -154,10 +186,54 @@ dados reais:
 | Híbrida (RRF) | 0,87 | 40 ms |
 
 - **Limite da medida:** o juiz é uma expressão regular por pergunta, o que favorece
-  o BM25. É uma checagem de sanidade; a avaliação final do RAG terá um gold set com
-  julgamento humano.
+  o BM25. É só uma checagem de sanidade; a avaliação do RAG inteiro vem a seguir.
 - **Recusa:** a maior similaridade separou bem as perguntas do tema (0,73–0,997) das
   de fora (0,48–0,54). O limiar `LIMIAR_EVIDENCIA = 0,55` é provisório.
+
+## Resultados da avaliação
+
+Protocolo: baseline congelada (B0, o pipeline da IA Gen aula 02), hipóteses que mudam
+uma variável por vez, gold set de 60 perguntas em 7 estratos (40 dev, 20 teste
+trancado), juízes LLM para relevância e fidelidade. Detalhes e todas as tabelas no
+notebook `10_avaliacao.ipynb`; para reproduzir, veja [Como reproduzir a avaliação](#como-reproduzir-a-avaliação).
+
+**Dev (40 perguntas): cada hipótese no estrato que ela previa**
+
+| Sistema | O que muda | Comportamento certo | Agulhas (B) | Paráfrases (C) | Filtros (D) | Falsa recusa / alucinação | Fidelidade | Chamadas |
+|---|---|---|---|---|---|---|---|---|
+| B0 | baseline: vetorial, recusa no prompt | 0,68 | 0,57 | 0,20 | 0,00 | 12 / 1 | 0,88 | 40 |
+| H1 | + busca híbrida | 0,80 | **1,00** | 0,40 | 0,00 | 7 / 1 | 0,91 | 40 |
+| H2 | + Multi-Query | 0,83 | **1,00** | **0,60** | 0,00 | 5 / 2 | 0,94 | 80 |
+| H3 | + roteador com filtros | **0,90** | 0,86 | 0,40 | **1,00** | 4 / 0 | 0,92 | 102 |
+| H4 | + guardrail e checagem de evidência (mín. 2) | 0,73 | 0,14 | 0,00 | **1,00** | 11 / 0 | 0,95 | 113 |
+| **H5** | H4 com mínimo de **1** evidência | **0,90** | 0,71 | **0,60** | **1,00** | **4 / 0** | **0,96** | 118 |
+
+- **H1** confirmou a previsão: o BM25 acha as agulhas (termos raros como "menorah",
+  "Blu-Ray"). **H2** ganhou nas paráfrases. **H3** acertou 100% dos filtros de metadado.
+- **H4** foi a lição da rodada: a checagem de evidência zerou a alucinação, mas exigia
+  2 evidências, e uma agulha só tem uma review certa. Recusou 7 perguntas com a
+  resposta no top-10. A **análise de erro** virou a hipótese **H5**
+  (`MIN_EVIDENCIAS = 1`), que recuperou as agulhas sem alucinação nova.
+- H3 e H5 empatam em comportamento; H5 fica com o maior F1 de recusa (0,87), a maior
+  fidelidade e é o único que barra 75% dos ataques já no guardrail, antes de gastar LLM.
+
+**Teste trancado (20 perguntas, rodado uma única vez): B0 x H5**
+
+| | B0 | H5 |
+|---|---|---|
+| Comportamento certo (IC 95% bootstrap) | 0,80 (0,60–0,95) | **0,90** (0,75–1,00) |
+| F1 da recusa | 0,78 | **0,88** |
+| Alucinação | 0 | 0 |
+| Precisão@10 | 0,39 | **0,69** |
+| Fidelidade (juiz) | 0,85 | **1,00** |
+| Filtros exatos (D) | 0,00 | **0,67** |
+| Latência mediana / p95 | 7 s / 17 s | 25 s / 39 s |
+| Chamadas ao LLM | 20 | 58 |
+
+Pergunta a pergunta, o H5 vence 2, empata 18 e não perde nenhuma. Com 20 perguntas os
+intervalos se sobrepõem: o ganho é consistente, mas a amostra é pequena para chamá-lo
+de significativo. **Custo total da avaliação:** cerca de R$ 14 no Gemini 3.8 Flash
+(~750 chamadas); ~77% dos tokens de saída são o raciocínio interno do modelo.
 
 ## Decisões de projeto
 
@@ -175,7 +251,8 @@ dados reais:
 | Reviews com menos de 3 palavras não viram evidência | com pergunta curta, a vetorial as puxa com similaridade alta e sem sentido |
 | Toda saída de LLM em schema Pydantic (`with_structured_output`) | sem parsing de texto livre; campo inventado vira erro (`extra="forbid"`) |
 | Saída do LLM conferida com dados reais | categoria inexistente, período fora da base e `review_id` não recuperado são descartados |
-| Recusa com duas barreiras: limiar + juiz LLM, mínimo de 2 evidências | o limiar não separa pergunta do domínio sem resposta ("entrega por drone") |
+| Recusa com duas barreiras: limiar + juiz LLM, mínimo de 1 evidência | o limiar não separa pergunta do domínio sem resposta ("entrega por drone"); mínimo de 2 recusava agulhas (H4 x H5 na avaliação) |
+| Avaliação com baseline, uma variável por vez e teste trancado | ganho com causa conhecida; o teste não é usado para ajustar nada |
 | Guardrail antes de qualquer LLM; log só com hash | defesa em profundidade e LGPD (IA Gen 06) |
 
 ## Limitações conhecidas
@@ -190,6 +267,12 @@ dados reais:
   (PLN 05) pode marcar essas divergências.
 - **PII:** o detector é por regex, sem validação aritmética; pode mascarar um número
   de pedido como telefone (falso positivo aceito).
+- **Avaliação:** os rótulos de relevância e a fidelidade vêm de juízes LLM; o protocolo
+  pede revisão humana de uma amostra (o notebook 10 sorteia 20 rótulos para isso), que
+  ainda não foi feita. Duas paráfrases (C02 e C07) nenhum sistema acerta: a review
+  certa não chega ao top-10. O teste tem só 20 perguntas.
+- **Latência e custo:** o H5 leva ~25 s por pergunta (4 chamadas ao LLM, espaçadas
+  pelo limitador) contra ~7 s da baseline.
 
 ## Dicionário de campos da base
 

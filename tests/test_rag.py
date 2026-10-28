@@ -86,5 +86,5 @@ def test_filtro_explicito_restringe_a_busca(montar):
     app, _ = montar(_respostas())
     estado = rag.responder(app, "Pedidos que não chegaram", filtros={"estados": ["RJ"]})
     assert set(estado["recuperados"]["review_id"]) <= {"r1"}
-    assert estado["resposta"].status == "recusada"           # só 1 review no RJ < MIN_EVIDENCIAS
+    assert [e.review_id for e in estado["resposta"].evidencias] == ["r1"]   # 1 review basta
     assert estado["resposta"].filtros == {"estados": ["RJ"]}

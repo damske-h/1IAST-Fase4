@@ -40,5 +40,5 @@ SEMENTE = 42            # amostras e exemplos reprodutíveis
 
 # --- Pipeline RAG ---------------------------------------------------------------
 QTD_VARIACOES = 3       # reformulações que o Multi-Query pede ao LLM (além da consulta original)
-MIN_EVIDENCIAS = 2      # reviews relevantes mínimas para responder; abaixo disso o RAG recusa
+MIN_EVIDENCIAS = 1      # reviews aprovadas pelo juiz para responder; era 2, a avaliação (H5) mostrou que recusava agulhas
 K_CONTEXTO = 10         # reviews do Multi-Query que vão para a checagem e para o prompt
