@@ -12,9 +12,9 @@ from langchain_core.rate_limiters import InMemoryRateLimiter
 
 from voc_rag.config import RAIZ
 
-MODELO_GEMINI_PADRAO = "models/gemini-2.5-flash"
+MODELO_GEMINI_PADRAO = "models/gemini-3.8-flash"   # o 2.5 não é mais liberado para contas novas
 MODELO_OPENAI_PADRAO = "gpt-4o-mini"
-REQUISICOES_POR_MINUTO = 8   # abaixo do limite do plano gratuito do Gemini (10/min no 2.5 Flash)
+REQUISICOES_POR_MINUTO = 8   # abaixo do limite do plano gratuito do Gemini (~10/min)
 
 
 def _limitador():

@@ -35,3 +35,25 @@ def test_baixar_copia_do_cache_quando_kagglehub_nao_tem_output_dir(tmp_path, mon
     assert dados.baixar_dados(destino) == destino
     assert dados.arquivos_faltando(destino) == []
     assert Path(destino / config.ARQUIVOS["reviews"]).read_text() == "a\n1\n"
+
+
+def test_baixar_copia_do_cache_quando_output_dir_nao_esta_vazio(tmp_path, monkeypatch):
+    """kagglehub 1.x: output_dir com o .gitkeep levanta FileExistsError."""
+    cache = tmp_path / "cache"
+    cache.mkdir()
+    for nome in config.ARQUIVOS.values():
+        (cache / nome).write_text("a\n1\n")
+
+    class Kagglehub1x:
+        @staticmethod
+        def dataset_download(handle, path=None, *, output_dir=None, force_download=False):
+            if output_dir is not None:
+                raise FileExistsError("output_dir is not empty")
+            return str(cache)
+
+    monkeypatch.setitem(__import__("sys").modules, "kagglehub", Kagglehub1x)
+    destino = tmp_path / "raw"
+    destino.mkdir()
+    (destino / ".gitkeep").touch()
+    assert dados.baixar_dados(destino) == destino
+    assert dados.arquivos_faltando(destino) == []

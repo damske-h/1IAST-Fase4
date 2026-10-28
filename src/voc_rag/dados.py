@@ -25,7 +25,10 @@ def baixar_dados(pasta=PASTA_BRUTOS, forcar=False):
         # do usuário (~/.cache/kagglehub/...), fora de qualquer repositório
         origem = kagglehub.dataset_download(DATASET_KAGGLE, output_dir=str(pasta),
                                             force_download=forcar)
-    except TypeError:  # kagglehub antigo, sem output_dir: baixa no cache e copiamos
+    except (TypeError, FileExistsError):
+        # TypeError: kagglehub antigo, sem output_dir. FileExistsError: o kagglehub 1.x
+        # recusa uma pasta não vazia (data/raw tem o .gitkeep). Nos dois casos baixamos
+        # no cache e copiamos os CSVs.
         origem = kagglehub.dataset_download(DATASET_KAGGLE, force_download=forcar)
 
     for nome in arquivos_faltando(pasta):

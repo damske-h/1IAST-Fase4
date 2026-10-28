@@ -15,7 +15,7 @@ def test_criar_llm_google_sem_validar(monkeypatch):
     monkeypatch.setattr(llm, "load_dotenv", lambda *a, **k: None)
     monkeypatch.setenv("GOOGLE_API_KEY", "chave-de-teste")
     modelo = llm.criar_llm(provedor="google", validar=False)
-    assert "gemini-2.5-flash" in modelo.model and modelo.temperature == 0
+    assert "gemini-3.8-flash" in modelo.model and modelo.temperature == 0
 
 
 def test_mascarar_segredos():

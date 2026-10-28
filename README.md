@@ -36,7 +36,7 @@ pergunta ─> guardrail ─> rotear ─> recuperar ─> checar ─> gerar ─> a
 ```
 
 Tudo com LangChain (`with_structured_output` em schemas Pydantic, LCEL) e LangGraph
-(`StateGraph`), como nas aulas. O LLM padrão é o Gemini 2.5 Flash, com fallback para a
+(`StateGraph`), como nas aulas. O LLM padrão é o Gemini 3.8 Flash (troque em `GEMINI_CHAT_MODEL`), com fallback para a
 OpenAI (`llm.criar_llm`). Pela linha de comando:
 
 ```bash
