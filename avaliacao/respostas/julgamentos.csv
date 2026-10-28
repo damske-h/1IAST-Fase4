@@ -1,0 +1,984 @@
+pergunta_id,review_id,relevante,subtema,rotulador
+A02,ac5bb807a20ac6e17c4fea902dd5c2d7,True,qualidade,llm
+A02,c8f6b3911af91c8111e98676d42c1a45,True,qualidade,llm
+A02,37c4111848e2210d47f4c7caddaaf8c5,True,qualidade,llm
+A02,76df0bd8c9d614662a1e893152b4741f,True,qualidade,llm
+A02,0c8bc7442f893de7f8afcdc294df9d77,True,entrega rápida,llm
+A02,20d7a7f393039d18d2db92f01c0e560c,True,qualidade,llm
+A02,922fc561acc74b44673b99c8e44cb9c8,True,qualidade,llm
+A02,55b04dfd7fdbe2e17c3fe21e47b971d7,True,qualidade,llm
+A02,bf023e68712189798e7ee8a57d7587a1,False,qualidade,llm
+A02,e2ef15f7e4530d14985b64b27913f99b,False,qualidade,llm
+A02,d09d1c62e2d6f2cef1623b39db918111,True,qualidade,llm
+A02,546c5fc7a406f1734a427d1c3eee4745,True,qualidade,llm
+A02,2bb719a23002da4f40ab4b52e41dd605,True,qualidade,llm
+A02,2685a4800004a12ec09d27264ff1915f,False,outro,llm
+A02,37a24aab8abb14b25c79815829193af4,False,outro,llm
+A02,2e85094a5645024b6f09f5516bc704bf,False,outro,llm
+A02,de6a12da73417b15a0a4d6f3a7e41251,True,qualidade,llm
+A02,2f6246bb1d87daff71cd5b4fa14633bd,True,qualidade,llm
+A02,408b161af0a7102451fb96b13ae2d9c7,True,qualidade,llm
+A02,1aec6a93267b23b0d96e1a58981264bb,True,qualidade,llm
+A02,7a7d77ee82410dbbca01fa7da9ab256e,True,qualidade,llm
+A02,08f0d4befa29b55bac628a0c2ed21aa7,True,qualidade,llm
+A02,09b80dcf6b56845dd7222a9fd5b40743,True,qualidade,llm
+A02,18aca283e8c3e54123f4bd2b7b082620,False,entrega rápida,llm
+A02,dbe8862b40d03554bdeda03972cbbe72,False,outro,llm
+A02,155f6b612d8f2f93a55fcf1257b203fa,False,entrega rápida,llm
+A02,2933b04dc514c187d3c97cb9d10ec221,True,qualidade,llm
+A02,9196b299bcea0ac9f6cb860cfec3f369,False,entrega rápida,llm
+A02,bd244a74b47998847d1e2f9fba25cc19,True,qualidade,llm
+A02,fa1ebb79a8ab5207048cb42fe60039e9,False,outro,llm
+A02,92875b3f2bb0da397f31acc02e5fd96f,True,qualidade,llm
+A02,a4da4e2417ca514e8cfd5833f8012eef,False,outro,llm
+A02,52c21ddc5c359ff6246028b37c01a68b,True,qualidade,llm
+A02,6c612bde41f4ce34be1b41efb17aa695,True,qualidade,llm
+A02,589f17d5f3a03a64bb6fb4499fd0b757,False,outro,llm
+A02,2e41aff5540a25f4ae6d0fd675458bb5,True,qualidade,llm
+A02,e203d589007409e506b8ac99b998b36d,False,entrega rápida,llm
+A02,a4f4cb8726f54bb5e96596a0b066cf60,True,entrega rápida,llm
+A02,77ab7b9e9da3faedba4592a68872428a,True,qualidade,llm
+A02,60ecfec095e1310b906b2959b8cc1ec3,False,outro,llm
+A02,17932636e1679540df3340c642fc1aa6,True,igual ao anúncio,llm
+A02,ccd1f6dd633f9daf7970e36f53adce70,True,igual ao anúncio,llm
+A02,1ee0867aa8a9aa0fcbad09877f0fe544,True,igual ao anúncio,llm
+A02,912a7c11cc111eb067f9e4e3fcd6b1bf,True,entrega rápida,llm
+A02,97caa6cc26973cb296b16435d6b63712,False,outro,llm
+A03,63bcd08d96493aaf37a206e1b0de0834,True,atendimento,llm
+A03,9b1e2c9d0d236f106bed5169a8cde33f,True,atendimento,llm
+A03,2e2302a45980152064ce595716ec7dec,True,atendimento,llm
+A03,c84b5bf0da038c4776c152096916ce6b,True,atendimento,llm
+A03,a8f1111819d30ddcba9e98eceebbdb27,True,atendimento,llm
+A03,b40a6984937cc251558d24d0b5caa929,True,atraso,llm
+A03,0d592da0b11f266efd97a16956ff6417,True,atendimento,llm
+A03,8f90f6de3cd4457572ab88f81eba12d6,True,não recebido,llm
+A03,48dfb09da10ec86135fedeb9941364c2,False,atendimento,llm
+A03,55c9f5c81ea066fada7ea66fe7ec5596,True,atendimento,llm
+A03,ce68db80d80267c04096e59a65a6b18f,False,outro,llm
+A03,b3166cbc9228929fd65e4f825ee6db7e,True,atendimento,llm
+A03,28cfb15fb82d073249fb59491c925ed1,True,atendimento,llm
+A03,ba1d2fb702c3ebfe910fcd5a70b64806,True,produto errado,llm
+A03,cd067325c7f9dd11c0e22408e69ce65e,False,outro,llm
+A03,2685a4800004a12ec09d27264ff1915f,False,outro,llm
+A03,7a93610296d0a660555dbb57d6b9024c,False,atraso,llm
+A03,d69aa04a78d0651dba8163e736abecb5,True,atendimento,llm
+A03,efd40569b71600fdb9dc77ec5c6b7e1b,False,defeito,llm
+A03,3f300f6c74124775dc27fb5fa04f9e1a,True,produto errado,llm
+A03,492515bbbd0f81afb80f6928e18447e9,True,produto errado,llm
+A03,d4469da4ea0680551bd2f446a5e45a28,True,defeito,llm
+A03,b4dca786d897a66bf7d9a0e4fd9b9760,False,outro,llm
+A03,ea837ec663c475461ee56afcd7f4e66a,True,não recebido,llm
+A03,0591cd11bdcf947c1514404182607906,True,atendimento,llm
+A03,e8160c6e61a39e8df70be847c5986888,True,produto errado,llm
+A03,32ff1219a7e485c1d460e65ce7a13e1a,True,atraso,llm
+A03,b369ba482fb3837283d080b0a5574fb7,True,atendimento,llm
+A03,197b3a4e0835ef2c24b3186f5197bea6,True,atendimento,llm
+A03,7e35de249e4297e698c85efe7d250290,False,outro,llm
+A03,0989809c7f3c376ee14c635684920d52,True,não recebido,llm
+A03,0897cac972d6802fd16947dc6fe89dd5,True,atendimento,llm
+A03,cb1bd176c1a8cb8037ae96301fb59a76,True,atendimento,llm
+A03,896ee1c1f9d98b01b64e5e7409f3ea3d,False,outro,llm
+A03,8af510702b70e7f87055b09d33e9b197,True,não recebido,llm
+A03,fd702a31f7ce34dc37ca90b95bc276a5,True,produto errado,llm
+A03,c947fcd9fadd5dd3168b0cd7bbf0283e,True,atendimento,llm
+A03,c27e122fd5da1aa3c9b9f801dcd68ece,True,atraso,llm
+A03,c073a54bbfbbd0282b00f3d50ccdd00f,True,produto errado,llm
+A03,b5f1ecee3ada2c5b5fa05ca47b576bbc,True,não recebido,llm
+A04,d0e65cc85544ac7aac7dd58c3659bf71,True,sem resposta,llm
+A04,0b5ee5955a27cf436f2c69c32e95f5b6,False,outro,llm
+A04,f6362b9da08c0cb3093dd517f5217e39,False,outro,llm
+A04,8af510702b70e7f87055b09d33e9b197,False,outro,llm
+A04,faf9562f00cc9e7c091b667170e215fb,True,sem resposta,llm
+A04,6ec93e77f444e0b1703740a69122e35d,False,outro,llm
+A04,e3093053992f15fd8088e4d52117bff7,False,outro,llm
+A04,d88b669e42b716d5f7313dc358a14e0a,True,descaso,llm
+A04,f1f8696d256889c0fe9962a5d32746e0,True,sem resposta,llm
+A04,d825cdaaa5648426b83fc2a19b6ef11f,False,outro,llm
+A04,671026223a554a2e17f2bdd7f6df9fb1,False,outro,llm
+A04,82c12f6fb9119fac3cd53f6bf78e8da2,False,outro,llm
+A04,e9c7b21eae49f95d880790cc9805bc68,False,outro,llm
+A04,a4b25b318d5119f25ac0cf5d6c829fd6,False,outro,llm
+A04,7daf685460afab41f5471d7d385074ea,True,sem resposta,llm
+A04,47f083e59650d4dfb6eb1997f4c1db64,True,sem resposta,llm
+A04,78b7f4f9651bcc08f412556e8f5012ed,False,outro,llm
+A04,fdfabfafa44c561fd3a6d50b6aad70dc,False,outro,llm
+A04,4a2342d04cde5e7736b53e012cd83c8b,True,sem resposta,llm
+A04,3399c230c47b20e122f6b143546b61a7,True,descaso,llm
+A04,c947fcd9fadd5dd3168b0cd7bbf0283e,False,outro,llm
+A04,bf2c57f53bad9664a748e27d59e6555f,False,outro,llm
+A04,70e1db72341965efc7c3f725806ba5f7,False,outro,llm
+A04,3d02da61a107514df2b917d7f2e2f30f,True,sem resposta,llm
+A04,d43c9dcdb7c9e532f0d0e686a95d8734,False,outro,llm
+A04,15898b543726a832d4137fbef5d1d00e,True,sem resposta,llm
+A04,2521ded73db8561e0fd8df85eeeaaf5e,True,cancelamento,llm
+A04,b736ff4204044e49e39062584d06fa74,False,outro,llm
+A04,41975492718e018823a6362d424ec17c,False,outro,llm
+A04,356452100e1dc9532738515511105910,False,outro,llm
+A04,53dd188a571009a71a2ba99bf02acb7d,True,sem resposta,llm
+A04,f3675fbbe2330758167467391c52618a,True,sem resposta,llm
+A04,4a02cdb5ae44b765695161891f9aaada,True,sem resposta,llm
+A04,1e39301e37ad6658793dfe56c6e0c077,True,sem resposta,llm
+A04,286001d15f82e1671d6e4c25d8c9f385,True,sem resposta,llm
+A05,daefe97009a79518f936fa8b80ee28aa,False,outro,llm
+A05,1415b7b7e5985a7c8957bb581633a5fc,True,bem embalado,llm
+A05,a0c63682a960eb52adde9feaf9c9b3b7,False,outro,llm
+A05,17102aaf6da7abbc1dd45cd8a6c7d3b8,False,outro,llm
+A05,7ede1fb0c7746e17e85ca0032ef8cfbe,False,outro,llm
+A05,76df0bd8c9d614662a1e893152b4741f,False,outro,llm
+A05,83d24d478d948b180721be139af82c2b,False,outro,llm
+A05,e760456fee18b5d7ef6ab72b15c29b7d,True,bem embalado,llm
+A05,014552bc1539eed96d4937a07ef1ba03,False,outro,llm
+A05,b73c11c6ade88f89503676c6bf2e7cc7,False,outro,llm
+A05,6ec6279e3883f19972abfe28cd9c0336,True,bem embalado,llm
+A05,2685a4800004a12ec09d27264ff1915f,False,outro,llm
+A05,24d46a7a87b49cc958edeb55bf7f4970,True,danificada,llm
+A05,2e85094a5645024b6f09f5516bc704bf,False,outro,llm
+A05,f6853e4f1d0f639a934b661f2787aa6f,False,outro,llm
+A05,f43672285e45de76d4355a6847b980bc,True,danificada,llm
+A05,2e4bd919c76bcd73e742995054200e4c,True,amassada,llm
+A05,2d252afef013ea5392e79df6173acc9b,True,bem embalado,llm
+A05,79466bd0422c13dc962f09f6cf064fc0,True,danificada,llm
+A05,95aa41a446f4a5b6ad9d51eadb938ede,True,amassada,llm
+A05,4738dbb560105d7c8637ee0c42dde793,True,bem embalado,llm
+A05,39701ad69837cd70e412e278dd1441a4,True,danificada,llm
+A05,f19ba35c74f688047cd5011fc8558273,True,bem embalado,llm
+A05,62ce10fc9469014dddbc4b26ed9e2f39,True,bem embalado,llm
+A05,0042c17cf2e1c6c6442ec6f3b7c1a7fd,True,outro,llm
+A05,4fd63fe56bc10dae199fb2d3a006c65e,True,outro,llm
+A05,2c319830d0849a9f24ba45c364bec424,True,caixa aberta,llm
+A05,755215ffa9405a185237cc7dce6bab49,True,outro,llm
+A05,01291a39bf79eea405012fdd541442f3,True,bem embalado,llm
+A05,06eb494d696615002b0c98db6e34c541,True,amassada,llm
+A05,64bd89b2f2a99542da7222c7b75ad65b,True,caixa aberta,llm
+A05,4b33c9a225c5754372b91d14e981370e,True,amassada,llm
+A05,f4d74b17cd63ee35efa82cd2567de911,True,amassada,llm
+A05,e0b4a2a73ad2d453f6992686a3603efe,True,amassada,llm
+A05,0a1d32916189ec275ae23b9a294023be,True,bem embalado,llm
+A05,2abb25fde5aafe9bc85d031dffb2f4ac,True,outro,llm
+A05,325b54bd8cd84d1a8ee53e8f10b2de6f,True,outro,llm
+A05,eff5a437d13dbbd7a93c11cef38aa1c2,True,caixa aberta,llm
+A05,9d18aa49373e5e7cab289ac23abe8149,True,bem embalado,llm
+A05,243dc62f2d12b270217f8b646ad77735,True,bem embalado,llm
+A05,60ecfec095e1310b906b2959b8cc1ec3,False,outro,llm
+A05,56240fcb8f4a49d5bca2602f488145f3,True,bem embalado,llm
+A07,bdd5ae2906b2b635f0ddf45174fee9a8,False,entrega parcial,llm
+A07,2814f166cd4a8d568be714001bb721c7,False,produto diferente,llm
+A07,845e2e54d907d8203f09c2741e2c5707,False,outro,llm
+A07,3c8f1e61ac9d5132afafd0ccd1704028,False,entrega parcial,llm
+A07,2e2302a45980152064ce595716ec7dec,False,outro,llm
+A07,249fbbf2f5a94666fc8190bf883048eb,False,outro,llm
+A07,3cd67e13e3b80b9ef8a966427e41d9f0,False,entrega parcial,llm
+A07,14c36536482c086f84fc703c0b30f79b,False,outro,llm
+A07,c947fcd9fadd5dd3168b0cd7bbf0283e,False,outro,llm
+A07,498be52f24a6de46fd2b1d2cb98a6729,False,entrega parcial,llm
+A07,63bcd08d96493aaf37a206e1b0de0834,False,outro,llm
+A07,bb5efdb064be56f4abbb502f4e8ae2b6,False,outro,llm
+A07,9190e6754710d977b6bc3185688e3ffe,False,atraso,llm
+A07,b369ba482fb3837283d080b0a5574fb7,False,outro,llm
+A07,c5a4690da16a9a92b4e419dba2f69daa,False,outro,llm
+A07,1dc746e02441451c76b88a5338019e0c,False,outro,llm
+A07,2d0a07007cc84621a2bc694505be4036,False,atraso,llm
+A07,a0e7ababec6161431a7cad78fcbb0514,False,outro,llm
+A07,9888b65b6c95068b349f7e61f7e1e500,True,produto diferente,llm
+A07,aed2587c0e7d2f35e9379595720ce1b2,True,qualidade média,llm
+A07,9915f689c9fb87e98d37ec561db35500,True,qualidade média,llm
+A07,88799c9ece425f5f40f02678520071d3,True,atraso,llm
+A07,dc2e572b990684eb92a840b3f79eecd5,False,outro,llm
+A07,d835b8dffd76e928af49f5b0f08997ca,True,outro,llm
+A07,39e4240eebf5e8d46b13b7596365c85f,False,outro,llm
+A07,2a2a1fda017244fb14ecb3efc78b050a,True,outro,llm
+A07,97ec2b5493793c1317c7bee94c770f28,True,produto diferente,llm
+A07,fd785bd6eaac4a6cc3015cb72b59243f,True,outro,llm
+A07,a51b17cc0ae35deec0466cbf057b6700,True,outro,llm
+A07,83f34ef280844faecf1d610823524a32,True,atraso,llm
+A07,c4410b4871b11023a57a8b86d33522f0,True,outro,llm
+A07,6519b35eee26a96203905284f2cea803,True,outro,llm
+A07,541a49b1bf39386c418f138d121f52c4,True,outro,llm
+A07,dc802d5e90de0becae76977219c9d247,True,atraso,llm
+A07,2384fba48959ba75dc66c1f3e5398c8c,True,produto diferente,llm
+A07,0daf63f26d677362fe43acc8fbe16b08,False,outro,llm
+A07,06aa69a1b49b2dbccae9c59ed52ea730,True,produto diferente,llm
+A07,b67a1ed874193e8d5f4c6f4083c2c906,True,outro,llm
+A07,170f333c55189a2433e4bd944cae3eb2,True,outro,llm
+A07,a51a9bca8396c197e49e3523834c147b,True,outro,llm
+A07,038fef592fcd504c704c34cadbc0bfd3,True,atraso,llm
+A07,0eb7bacd568d3780f88cb7ca583ccf84,True,produto diferente,llm
+A07,7981d5fdab42a5040d7f829c8d20bead,True,outro,llm
+A07,347f3a11b8039f3a37fecd76e23e47ff,True,outro,llm
+A07,7a7edb4d464f61401138e6b955b2e72e,True,atraso,llm
+A07,8335bd481e9d9c88124ada29314c4cd9,True,atraso,llm
+A07,eb0aa28d42fb645ad374d72a3025a1e0,False,outro,llm
+A07,d476ce8b04a3396a50c76e0504ca7622,False,outro,llm
+A07,bf2c57f53bad9664a748e27d59e6555f,True,atraso,llm
+A07,2bf6e0c426c367739347388f4aef4dee,True,qualidade média,llm
+A09,0f20d83e6b0e801bd3fcadf6ab3e5ebe,True,antes do prazo,llm
+A09,7900e7a53cee36fa752e5431aebfaf33,True,dentro do prazo,llm
+A09,a525f7e4bb0fc68d5d920d1e6561b18f,True,dentro do prazo,llm
+A09,91329ecf8da4b2cf8c0a867f8d9ac4c7,True,dentro do prazo,llm
+A09,9c4814b68807d29d78e051b3793b35a5,True,antes do prazo,llm
+A09,2f612bdface18978e0f23c572ceab142,True,dentro do prazo,llm
+A09,952d3ef82bd6324a2dd13d8b297cf4a6,True,dentro do prazo,llm
+A09,da51f4dad4464f71a5ca197a3bdb5aa1,True,dentro do prazo,llm
+A09,a7f29bcb0ca6e8ef06baea94bb8c29be,True,dentro do prazo,llm
+A09,c0ea8675636ac591666a0c6298a2b5da,True,atraso,llm
+A09,941392abedd499016d8f4fbecfd1e0c5,True,prazo longo,llm
+A09,70cf78f2d877fbff06c6f06f20374725,True,dentro do prazo,llm
+A09,4b14b9bb96003ba08d0fff814c4506e6,True,dentro do prazo,llm
+A09,2e85094a5645024b6f09f5516bc704bf,False,outro,llm
+A09,e1d14943585bce23832dbefae3da0d31,False,outro,llm
+A09,2685a4800004a12ec09d27264ff1915f,False,outro,llm
+A09,3aa725d1ae40668294f8a90e9623721b,True,dentro do prazo,llm
+A09,6dfcc7c9593b8f52d6a13f06d72562ae,True,dentro do prazo,llm
+A09,866b71725cc8f2b54830ea14fe6c92b7,True,dentro do prazo,llm
+A09,d090cb046b2993d369fcf875709704bb,True,dentro do prazo,llm
+A09,b979e1dae86f6a0c019700e307821dce,True,antes do prazo,llm
+A09,ab796da379bad664fa884f34711b0ca8,True,atraso,llm
+A09,d975d31dea2a48e55dfe6ea4218d8b35,True,dentro do prazo,llm
+A09,ff55fd814d383dc42cb2a49a479014e9,True,antes do prazo,llm
+A09,98656037bdc83628318266066cd21b7c,True,antes do prazo,llm
+A09,a46bdf91998cbf58faad3df6fa721f06,True,dentro do prazo,llm
+A09,dde02d7b2794ea87806ce654f4761707,True,dentro do prazo,llm
+A09,d7649768077bfdcb4c8b6ddc4642def8,True,dentro do prazo,llm
+A09,63a10eb113f32b9881f910eafe895434,True,dentro do prazo,llm
+A09,57409a991e7216354e4b4cc7927454fb,True,dentro do prazo,llm
+A09,cc7aa30132ae7195c15ac60a6d96f63d,True,prazo longo,llm
+A09,4e8c86732da5e01d040d145bc894e7c8,True,dentro do prazo,llm
+A09,d6199315f37472452b88f95a8f827fe3,True,dentro do prazo,llm
+A09,2518ac1e2962f0f7df21e07966423779,True,atraso,llm
+A09,05947f6a34d4c2575aad7d6511d0e5ec,True,dentro do prazo,llm
+A09,0f18aee9b66f0680a2f88fc6a0f4a9c1,True,dentro do prazo,llm
+A10,a753779eddd7843d473c4e42408e804d,True,veio só uma parte,llm
+A10,d64e0d1c36a19fc8c496e4d131cc525b,True,entregas separadas,llm
+A10,84775964cfaf2e4fa80f8657d4cdede8,True,veio só uma parte,llm
+A10,77ab0789563a5269c2b37be6c00a5148,False,outro,llm
+A10,418e116e674f189fe8cf49e42f9de462,False,outro,llm
+A10,8b0e9809286d3431dc78328f6630f656,True,outro,llm
+A10,549989cb4659749182a0cc2cb30ac64f,True,veio só uma parte,llm
+A10,6b48d00c41470b7046e7ded50326d1c9,False,outro,llm
+A10,5f4f9f4fbe76b20a992d26c29bcfec2f,True,item faltando,llm
+A10,2e56674aa72757a9c730a5886e3b210a,True,veio só uma parte,llm
+A10,95e6b7803e1164b7cf0e5850f20cc8b9,True,veio só uma parte,llm
+A10,30e629b53efe4888efa64332a8f717f8,True,veio só uma parte,llm
+A10,c190bdb09af045e0dd37383a659cf1c9,False,outro,llm
+A10,ced90610a0f8bfc1ffc2cd7de3eeeab1,True,veio só uma parte,llm
+A10,965446bbb0eeabf720323cc37619ccca,True,veio só uma parte,llm
+A10,391940700d8b65290f334bd930b8e8b6,False,outro,llm
+A10,4eb848c0624f12e5a88f77ef43a4411c,False,outro,llm
+A10,843d96363eaffa160494e9922e553c5a,True,entregas separadas,llm
+A10,660ed6c79cbac0050498c5a6ab1b0155,True,item faltando,llm
+A10,dba5197f90198999eebfa0aef3112681,True,item faltando,llm
+A10,e2151cbbe41614f383562310b6438748,True,item faltando,llm
+A10,7e4dbfbeef349260ecb3422379692204,True,veio só uma parte,llm
+A10,8cbd43b45179c8a12c3485edb697c56f,True,item faltando,llm
+A10,08528f70f579f0c830189efc523d2182,False,outro,llm
+A10,e6ad4763e83667ce38442f2e07308c7c,True,item faltando,llm
+A10,0fdb93c96bcacb37101b6c9c0d887a51,False,outro,llm
+A10,2377a154e3d70d13979624d8bd89ead2,True,item faltando,llm
+A10,9ad36c0035135652c7f9c0d8e6e7c253,False,outro,llm
+A10,d100adcddcef25bfa83bb819d562211c,True,item faltando,llm
+A10,93753383850e304f5110814eba2d942e,True,veio só uma parte,llm
+A10,256869e03116bbbed6bf81934f8b2a7e,False,outro,llm
+A10,e70c3511b7dcbe1966bec2a3b9f959d7,True,item faltando,llm
+A10,df3619b5ba66c4bfbc8ab2f5b516ca02,True,veio só uma parte,llm
+A10,5148ad2bdca65375e9504355d79c6ad4,True,veio só uma parte,llm
+A10,833bec51393d3b3ddedb33378ef5828b,True,veio só uma parte,llm
+A10,644926b134945775fcc996aec98f3680,False,outro,llm
+A10,a2966e2720599edd4ac9d99d72a4f47b,True,veio só uma parte,llm
+A10,7fb985b85b91d0b305fecc3531c9b371,True,veio só uma parte,llm
+A10,3fb33c49be4d375ddb15913bbb8c0f73,True,entregas separadas,llm
+A10,a77b2ccb76828563165a94d67906ad76,False,outro,llm
+A10,16a1a92194df29f6b8fcf795203cf321,True,item faltando,llm
+A10,1ba403996e200a1a1a0a22ca75436734,True,outro,llm
+A12,715d3f3f7ef4c0d9dc0e8fc2b7d64d3c,True,outro,llm
+A12,f7823c8ee1df13928f039c9cdd754f1a,True,rápida,llm
+A12,9e5a163185c77d798ab88a4a381cc21f,False,outro,llm
+A12,7b0e8ffe0be381592eaf42208df66494,True,rápida,llm
+A12,7c993f44d3d46ec4e5836443dd473f04,True,antes do prazo,llm
+A12,4b4f1f1ad3fcac5ed98109ed67b1d072,False,outro,llm
+A12,74efeafd742b79afcacc5be32d942d75,True,rápida,llm
+A12,8c53c47cb8b315b9bf4ec1f704040b05,True,rápida,llm
+A12,dddcf84aeb8b7c7739df6690f7b1a419,True,rápida,llm
+A12,f2d00b0331c63cb6b4f4145a96f4a1bd,False,outro,llm
+A12,985234d8c4cf3b005fd5dee7b4e01cce,True,outro,llm
+A12,b412deb19ed0b3985b6a95e96d43a7d9,False,outro,llm
+A12,92a7f43308fa7aeda4798915f615f86b,False,outro,llm
+A12,cd92b9871d799d527450f33eee615e3e,True,bem embalado,llm
+A12,edaa16466962b4d9bf91f0dcccff3808,False,outro,llm
+A12,46ba6dc84ccd9aab415f9cf967a4869e,True,antes do prazo,llm
+A12,e5b2c369b09029fa5a763e30cbee567f,True,rápida,llm
+A12,51b4c760e444c1aac965f0ba14a11daa,True,antes do prazo,llm
+A12,5560c6ee7aabece488692b0da6187d44,True,antes do prazo,llm
+A12,677b772b42d6501bf592ea45874f95b3,True,rápida,llm
+A12,05b7545fd8c4e8b1736846c166976225,True,antes do prazo,llm
+A12,64ea3ff26da93a0daadd2ad983f47f2a,True,antes do prazo,llm
+A12,91a5f42bead2809194d326f13a127b8f,True,outro,llm
+A12,706ffd0fca9eb4f93d2f6ddead6f61a5,True,rápida,llm
+A12,143caa50553ba5bdf75cd08533a359e5,True,antes do prazo,llm
+A12,5414ccae46e737879d3abffb7f7b6d55,True,rápida,llm
+A12,5ed7517759dc9a2621de1af233200382,True,rápida,llm
+A12,ed988bb38ab604dac2453363f0d15411,True,antes do prazo,llm
+A12,3716b631e340f9b637561eb1a11aa8a0,False,outro,llm
+A12,9ad7a5944e695ee0e3bae5521e08781a,False,outro,llm
+A12,034fff9d15616ad687256f58a057f4f4,True,outro,llm
+A12,6cb7cef45446999e2c67bb08831d3406,True,antes do prazo,llm
+A12,65e3d04aef73660b0b2145ef3d5762cd,False,outro,llm
+A12,debbc81988f8db1746fad038a9191bcd,False,outro,llm
+A12,072133dc43d0fd76a78b665fa716b140,True,outro,llm
+A12,b9a7af214342325709cac95a1f8107e9,False,outro,llm
+A12,723fea960c9352c67d56ddb1f9892ebd,True,outro,llm
+A12,3886f67ed8ceaa103c108115ecc80905,True,rápida,llm
+A12,ffee16b6eb3608ea21ad8048a809380c,True,antes do prazo,llm
+A12,8a24b9108e492e22e16764ce68fe3111,True,antes do prazo,llm
+A12,2b88756e010de39180de9b9496f64dbb,True,outro,llm
+A12,8d4ad3ae45ef7ed15ebf3d24dabf1f86,True,outro,llm
+A12,6e8cf20456a8aa4ac20e3ffe288e3d48,False,outro,llm
+A12,b256e25a008131c60d90d40999d46b1c,True,antes do prazo,llm
+A12,0c83913ea0372c6ce1727adb7f5a765f,True,rápida,llm
+A12,f291ba1f9da68ca38af9c6eb22acacc7,True,antes do prazo,llm
+B02,ee1323bbd07c190c275ca217872171d0,False,outro,llm
+B02,f08d703410a3becb503822e5091307fc,False,outro,llm
+B02,aee7d954a0122fb807feadf0d54d584f,False,outro,llm
+B02,8a850152ac220811336e45ee139e51f3,False,outro,llm
+B02,d4b6257597310302a91ecf480889c098,False,outro,llm
+B02,54503553c165570e6954ef882de20d20,True,outro,llm
+B02,55407eb6d0b880a2bd33b3abd59eaf0e,False,outro,llm
+B02,6a30919ec3287491526d13339328e5b1,False,outro,llm
+B02,b311e5c937eac909e5d6e2bb6c49d991,False,outro,llm
+B02,3bd4d54b892bc57bde9b9b6bbd63e080,False,outro,llm
+B02,b369ba482fb3837283d080b0a5574fb7,False,outro,llm
+B02,c84b5bf0da038c4776c152096916ce6b,False,outro,llm
+B02,c947fcd9fadd5dd3168b0cd7bbf0283e,False,outro,llm
+B02,2e2302a45980152064ce595716ec7dec,False,outro,llm
+B02,bdf5a6725bd52d7cce30a0d5e6f2a4e0,False,outro,llm
+B02,df8a0088f014a0de94991955bd9171b8,False,outro,llm
+B02,34fa9eabe611e3c327ac78a0b77a8618,False,outro,llm
+B02,d37b8cfe7008f4c4d72e4b441a827cf9,False,outro,llm
+B02,cce8fdbd69a1ce5c61e1fb91c75930e2,False,outro,llm
+B02,8f1cb6963bdc106dc9b7bd4e2ce39802,False,outro,llm
+B02,51f6f3bf59d0f3b2038c78bec45e8288,False,outro,llm
+B02,ce4949c1d599e5258aa82739b6d86246,False,outro,llm
+B02,4ef1beefd4aabdae125552a34ac8eb47,False,outro,llm
+B02,eeb8f4f6fa1a89fb4652d4eed4fe7e85,False,outro,llm
+B02,0cccdf5d4328ca8d33c9e5009e716598,False,outro,llm
+B02,cc0d94987085854c29ad5c5f50c85fd5,False,outro,llm
+B02,64721f0e2696f971f96863cdc04372d0,False,outro,llm
+B02,0ccfc62cda902e61bf8dcbc81f24086b,False,outro,llm
+B02,632b227ae6141fc39d40e954b43134a3,False,outro,llm
+B02,38c84247192821745cd7c795012b03a1,False,outro,llm
+B02,0a86727eced5792426720df56416a8e0,False,outro,llm
+B02,3ba1a7ddae6d123a1d54e7f6c9fac135,False,outro,llm
+B02,9f2f08676e3fb5560684dbace1d78ddb,False,outro,llm
+B02,12c50496bd199052d9d1633929d99ab4,False,outro,llm
+B02,76f18b7270462e9e53f1f1f1872396ae,False,outro,llm
+B02,0d9770bd211f24e77454717efc13d6bc,False,outro,llm
+B02,5f564429f68da71e4daa345982bbcd57,False,outro,llm
+B02,cd5456007623da2dd224661d1e058130,False,outro,llm
+B03,7ec79f986a2de7898accd2d980674baf,True,outro,llm
+B03,b142a373901472c05940a5be68fa406f,False,outro,llm
+B03,c00de1d9863f772799e058e85ec044f3,False,outro,llm
+B03,02595371bb8fca25d1e08b0c68cf2e38,False,outro,llm
+B03,89750cb919b3291b107a2db388a540a5,False,outro,llm
+B03,6f1a19bf03b03565115f376a64dd4ae4,False,outro,llm
+B03,756535cde17cec0de605f613331bb90a,False,outro,llm
+B03,b24c57693458a69e46fc48756e7cfa02,False,outro,llm
+B03,4690c0d625f1cad5827dc6c7e6c46918,False,outro,llm
+B03,b8a2743d253ba5187a567d4434c84399,False,outro,llm
+B03,f9b97f92134a04c49b083c5f96c8ee05,False,outro,llm
+B03,4d3cb0e58c0773b9970e9e6fb41d7482,False,outro,llm
+B03,6177070c030d76ea524107172f4e9d9f,False,outro,llm
+B03,9f2f18dabb7cef5c8719de6a697ce09b,False,outro,llm
+B03,bb3ad18fb8d869094112f04b6dca36a0,False,outro,llm
+B03,c0b096ea9c62d1fec3ae686b637cf821,False,outro,llm
+B03,fe00a05862307664e65dabdc8b894f5c,False,outro,llm
+B03,ccc610454b2643598d5a3dd3af5f3e80,False,outro,llm
+B03,753a174731e23a1a5e70cb06db7502f2,False,outro,llm
+B03,1edf2a3596b417ee8485f64c7c2109ac,False,outro,llm
+B03,16156000b94e7d37d77f5b495510ba09,False,outro,llm
+B03,c14f5ad0a190c358d0f403bd78d4cc93,False,outro,llm
+B03,acde3efbbb9a62944a196c6bb81b241b,False,outro,llm
+B03,2c035e23ec95eb130b1f2dbbdeeee78a,False,outro,llm
+B03,25eddf8dc03be2e15aec8ac8a32f1923,False,outro,llm
+B03,3212f55943be9add2368001f1a71e709,False,outro,llm
+B04,f30482f0795f129be4f6587358f9a547,False,outro,llm
+B04,bfa022df07b51a3375765d3a2fe71907,False,outro,llm
+B04,abb4e4b1fd981095bde6c62146551f75,False,outro,llm
+B04,43ee2cae9fc48a6b4e73a105beb641b9,False,outro,llm
+B04,2d90bdb77533cae4c2957b2e9f315a91,False,outro,llm
+B04,1ee0d945196c3da670782b7a26b5be2b,False,outro,llm
+B04,932957a4d63928ac192ea23047e8485a,False,outro,llm
+B04,607e591f2fe9619e6073241840fb7d02,False,outro,llm
+B04,301c40969b1ff2ed7287d0cc15e067f0,False,outro,llm
+B04,f29c994912885f6509c0e7f64210d3a7,False,outro,llm
+B04,adc6c652114cbbfb70b01aa23f2995e6,True,outro,llm
+B04,e72fc9a79111b951a1bcb58140d027a4,False,outro,llm
+B04,85c793c4333f1d0cdc48faf45c5d7657,False,outro,llm
+B04,3dc307785b5f57c2c873d306badf8365,False,outro,llm
+B04,cc938526ed131efccd9cfb84d0a31f5a,False,outro,llm
+B04,67d07fb527944d604b143f0bc00f7769,False,outro,llm
+B04,199230aa533406b9564ad1ce09fe0f4c,False,outro,llm
+B04,3bb62a5068119ab7282866b129a5ce8e,False,outro,llm
+B04,c94fe7161f7932281babee672d4b4248,False,outro,llm
+B04,4d7742319d8d9d6d9df4c387ca99ba30,False,outro,llm
+B04,de896ccbef67cc6128ba1a4e54f7becf,False,outro,llm
+B04,a5e745fcd4cd5a5097ef668db8b81d5f,False,outro,llm
+B04,bcbaf47417d614f8c7af9799a3737529,False,outro,llm
+B04,64fbf5052ba67fac0cd625282a1e08c2,False,outro,llm
+B04,970ae53be2a33c1beaaff6621dfc6739,False,outro,llm
+B05,53ff09b578dd8152f3a042ba9ee9e9fc,False,outro,llm
+B05,d2e2f224786b1997738e950b9e21db29,True,outro,llm
+B05,3ba0c5fdb91ea740f198afbea6c63d2c,False,outro,llm
+B05,6a29bd2b663e307a8a8178a8a77cb924,False,outro,llm
+B05,8ffe5dc30a28620ac9a4f6531213bbdf,False,outro,llm
+B05,e8f3a0129e0663b6eee1b6d338c5b022,False,outro,llm
+B05,15392afc2364a53166ef4727a925bfc4,False,outro,llm
+B05,722c51c177301c6ac42148d79c82ccab,False,outro,llm
+B05,bc69d6229bf06da4c5a1986be73fd146,False,outro,llm
+B05,fe1895a0e38e52adbddd55279b6a13b5,False,outro,llm
+B05,84497ba50d06f5e8e6205d05f3c8d305,False,outro,llm
+B05,630e7144e10763a00c69657ef00f6141,False,outro,llm
+B05,1163b857e0de041f471da0c2b2f08dc9,False,outro,llm
+B05,ce68db80d80267c04096e59a65a6b18f,False,outro,llm
+B05,2685a4800004a12ec09d27264ff1915f,False,outro,llm
+B05,a0e385162107a3914c88a57eb8c3e96f,False,outro,llm
+B05,c15f5c73eb74862a1e340d100d1b0e0f,False,outro,llm
+B05,b23884a121b0d630f7f4a8120aa9b0e2,False,outro,llm
+B05,cd5f6f2d622dced617215905dec21063,False,outro,llm
+B05,b3fd480a456ec09e08d88ebe7e413424,False,outro,llm
+B05,65d8fbffe3d18b1df2de1d8503ef1713,False,outro,llm
+B05,0a91c21fbb9e7cced9eee0101233c183,False,outro,llm
+B05,6df394b78bdce2be684a62fd31b91538,False,outro,llm
+B05,c479e65d0252aefb7c63fc4db221696c,False,outro,llm
+B05,336bdade588bdacc8e462ded539da940,False,outro,llm
+B05,4fe7c70c9d8dc062651dbc92491a2ee7,False,outro,llm
+B06,6b667c97d9dbb57b0d3dd327934177c1,False,outro,llm
+B06,48e842fd2d333bf25db3a318410b7941,False,outro,llm
+B06,e4335df972c621d80e59bd5f87df0eea,False,outro,llm
+B06,6b8f3669d17ec0b31bf6517eda1b6374,True,outro,llm
+B06,f5bd18ef1666cff2762104f5bed51b83,False,outro,llm
+B06,3becbcf552ae5d0522f407750cdeae0b,False,outro,llm
+B06,f9dd675d09fa075a7954d7f340d47524,False,outro,llm
+B06,0e4a2221b3635c244bf7c5e5cf768bcb,False,outro,llm
+B06,3cd2863aa22cf5e980423c285bbc94c3,False,outro,llm
+B06,73f8bd539df506203f60e9e575075704,False,outro,llm
+B06,2ee221b28e5b6fceffac59487ed39348,False,outro,llm
+B06,be89f195bc595a908d151ccd9f8cbd7b,False,outro,llm
+B06,5a4083cb483e66fd62ace45ae023b2d1,False,outro,llm
+B06,b2cd7725f36f7856dce3fb1dede995d5,False,outro,llm
+B06,fa24a8f24024b4191d8b5e0b01f36dd6,False,outro,llm
+B06,a1c2afbaa7876791a0751f94f9e5186f,False,outro,llm
+B06,df0eacf4d85c543131c4ebdda368743d,False,outro,llm
+B06,fc79193a78585c765288d1c233c81051,False,outro,llm
+B06,ea064d00128289d0d4d756e625ef5431,False,outro,llm
+B06,fe5e4133b0db28481fa240e96f28daeb,False,outro,llm
+B06,09e543d8be5911076628e46bcf674dfb,False,outro,llm
+B06,c66bbfcd266acc1a20a9afb313d1697e,False,outro,llm
+B08,89e36888c39685c524a74270824e9fdb,False,outro,llm
+B08,3c15004ee749e593c6ee0613d1c96d86,False,outro,llm
+B08,a85e07c6d948cbe72442e8b523a6b6a4,False,outro,llm
+B08,268fe3c6b00758e3a602f8cd3ed93c1f,False,outro,llm
+B08,b5f1ecee3ada2c5b5fa05ca47b576bbc,False,outro,llm
+B08,345a3e034220a1e3d0c3b99f5f5fd6c7,False,outro,llm
+B08,c073a54bbfbbd0282b00f3d50ccdd00f,False,outro,llm
+B08,8c75bb05db22fb6c67bd3c67b2253884,False,outro,llm
+B08,70f4753f06be1c0a581148c30505d5e8,False,outro,llm
+B08,2cfe9b52787853c8f008a1132d1619be,False,outro,llm
+B08,c79a894a56970fc15f614d8ee7c30c33,True,outro,llm
+B08,33aa5c84a2db516b7d18e74f2193ad0b,False,outro,llm
+B08,3d2d368327c6f17ad76d8ac4637df1fb,False,outro,llm
+B08,858ed261089bdf654a41a979f8724d34,False,outro,llm
+B08,5875e483649c04bcfd1368c8aba682e7,False,outro,llm
+B08,0cbb6c4a0dd218723fa235bf6941308c,False,outro,llm
+B08,75679fc9406a0bc32999807e7c526e3e,False,outro,llm
+B08,95d9b32ceb14e27ec00467d1792b457e,False,outro,llm
+B08,f8a589574d5a33543da5d17e32afff4f,False,outro,llm
+B08,a07589e145a10b7428786ce94186b128,False,outro,llm
+B08,5849ab48269292920477dbe2cf734707,False,outro,llm
+B08,ae9d127bdb362166a65edc00feceea3f,False,outro,llm
+B08,19b9727a40fd5060ef73d5d290beac8e,False,outro,llm
+B08,9e3f609364479ecc228cf38239029219,False,outro,llm
+B08,d87c687dd8b02f8ada8388b7509a5040,False,outro,llm
+B08,563a9b4022520a9a04973f1c5799dcd3,False,outro,llm
+B08,51a1578250f045f0a1044b653ee9b3be,False,outro,llm
+B08,556427e3202f4a666248887a017cf047,False,outro,llm
+B08,ab62d142ee277026400f4201da36cedc,False,outro,llm
+B08,d7ab800fa792657ded6d9b94786ffdb1,False,outro,llm
+B08,6e90b745db20f3b8f6c2d76d02fb79a2,False,outro,llm
+B08,40d60ce68e2f9de31d71d1d661e98ccd,False,outro,llm
+B08,8937ffc793129f6dc2fe84b03645bfda,False,outro,llm
+B08,b2bf9b39b2838c18913129075bd6e133,False,outro,llm
+B08,d8bb40405bf801667cd42a98d9757d12,False,outro,llm
+B08,2d6ac45f859465b5c185274a1c929637,False,outro,llm
+B08,fc126485c08e622edc62ee1407660547,False,outro,llm
+B09,11ef0a68b4f16f04e4ca18c6977b719e,False,outro,llm
+B09,458d87b8d51afc4fbd525a4621b8d44d,False,outro,llm
+B09,8e93dd240ee9c0d8ba83436980caa09e,False,outro,llm
+B09,bde9690c5e5c3b960a58b1114b007753,False,outro,llm
+B09,6462f6fb66846e9ba076c54e6f6219fb,False,outro,llm
+B09,1c6e23b615b667e798d91396baefc502,False,outro,llm
+B09,0ec638d4fa47f321fd70dd6dd6e7c568,False,outro,llm
+B09,6b88abf190e3b6cbf33a8c6438d0d638,False,outro,llm
+B09,356452100e1dc9532738515511105910,False,outro,llm
+B09,a3161915ee37f9d5843e9ae44867ba4c,False,outro,llm
+B09,d674cf343001412671d6b707b919ffd1,True,outro,llm
+B09,bb37473de3b4904c640b8250549b55c7,True,outro,llm
+B09,595ef5789de4152ee41389f5b1420d55,False,outro,llm
+B09,ad1b6b715db6e446769f2cdd4a2d4e12,False,outro,llm
+B09,120175ff4dfe57bac512750e675b80ab,False,outro,llm
+B09,09ed3d669d2e63e270a19853598d88d7,False,outro,llm
+B09,357a59780322ae188da9ee981ea41767,False,outro,llm
+B09,1db1f018c1f083393dd2746db51f7e75,False,outro,llm
+B09,7938ccb422f56e209d20e509f324216b,False,outro,llm
+B09,92cc919e166923af080d48d3a121dc74,False,outro,llm
+B09,a1b4730489b2f4a0aa286caea5ff1303,False,outro,llm
+B09,e1a7e60087f19d01411b3bfc9c2c4ee3,False,outro,llm
+B09,bcc783302a58fbb9c9fc5bf2578ddae1,False,outro,llm
+B09,2d474ab2e43fbed75a3893384c8148c6,False,outro,llm
+B09,db8d57be56f47bdaa9a09f1d79e4bd8f,False,outro,llm
+B09,0d4c56af896dd6eb9de8edbaa1902d22,False,outro,llm
+B09,2835986fb61a9e646a7d2c79155ebdfa,False,outro,llm
+B09,b2b9b427bb5b13fc68fb965a61281aea,False,outro,llm
+B09,f69bf052b3b43abde9856c27c1b8bf05,False,outro,llm
+B09,0c252b0c128749f6c53910893274ec66,False,outro,llm
+B09,b4cf5f4fc8668857cb4de5b6546a47a7,False,outro,llm
+B09,7433f58b9a195ac20e00e108ac6e4de5,False,outro,llm
+B09,588f74dc6d88b08b8181fbf7b1cd9d5a,False,outro,llm
+B09,74b1f697396823d14fdde162d7144cc0,False,outro,llm
+B09,02d90afea6e1d460602ff71b3d601659,False,outro,llm
+B09,775e02bf8e5bfb135a250c36e9beee68,False,outro,llm
+B09,d4e3e93091514009a52f4f4136c71d85,False,outro,llm
+B09,c3a975bac961276057434e3016d7dcfa,False,outro,llm
+C02,517de6e71d8ef67e78080bc925930dc4,False,outro,llm
+C02,5f919492c3a4944c567b0c6afd00ebe9,False,outro,llm
+C02,4cdf8a5d8ebfc1b155cd03c7bd53d9dc,False,outro,llm
+C02,7e410f41664f244610ef1de9d6348c1b,False,outro,llm
+C02,e6be7650a29822511924a64eecc647c7,False,outro,llm
+C02,1a6308ac2462f451538e9c285871425e,False,outro,llm
+C02,7750c5e4bc6b1b025f880a293a18cce5,False,outro,llm
+C02,6eee4056d76a49f5914927f8f73614f8,False,outro,llm
+C02,edaaede8010ecc7b636834a91245bde3,False,outro,llm
+C02,36d739ef90fcc3634169bec742db1c11,False,outro,llm
+C02,8de59983eadc752efaf5e7c5b4b46787,False,outro,llm
+C02,a1c2afbaa7876791a0751f94f9e5186f,False,outro,llm
+C02,dc107c6e318986debd7703473acd0384,False,outro,llm
+C02,1012ebd270442f7b10e4690053189c4c,False,outro,llm
+C02,c5cc7aa34e8b2d562c839b7a8c37159c,False,outro,llm
+C02,09e543d8be5911076628e46bcf674dfb,False,outro,llm
+C02,df0eacf4d85c543131c4ebdda368743d,False,outro,llm
+C02,be5ee84b468eeadea14d65bab28d34a0,False,outro,llm
+C02,18cb0179882672cfda1a52ddb6ceeb24,False,outro,llm
+C02,65b934c20d632fc2df0fd4723464fa78,False,outro,llm
+C02,43d8e78966af9a8945cd778a29cd4ee3,False,outro,llm
+C02,e04956abe753e1fb392b5ea164806181,False,outro,llm
+C02,af2cefe76aab39b87781c8e7b71c3d57,False,outro,llm
+C02,df798224e900da587731d7ffaec0a984,False,outro,llm
+C02,801fb7f38a93205e682ef363234bd7dd,False,outro,llm
+C02,3ee856ed1e84f61f740884e106011362,False,outro,llm
+C02,e207871d3e871b6b5c81d931ea9e7c57,False,outro,llm
+C02,2f8bf52e303b5ec02d5809ad02cbd2a0,False,outro,llm
+C02,e85164bba30b7e1f290803854926a87c,False,outro,llm
+C02,700135724fcdc3170960fd95b8fb5904,False,outro,llm
+C02,6e11801004dbf1cbede53d487b3deee0,False,outro,llm
+C02,71f7323f884804c6d38bbcd658e07318,False,outro,llm
+C02,550becbb18123571c33b39347ab641e5,False,outro,llm
+C02,18ffc8a9bb233d6ff5f7ee8dc76c2c62,False,outro,llm
+C02,1d29949509375f5bd9969dd3545514d3,False,outro,llm
+C02,273b1f0d4e4cd3400e90d3d426f33b35,False,outro,llm
+C02,ab042ec72e6d7f289a618faa2afc59c2,False,outro,llm
+C02,2275520e6b25ed9e6d690dbc8275fe11,False,outro,llm
+C02,f01d1292f0cdd12b184e7e0c49528da2,False,outro,llm
+C02,5330dea29a40833c9807549d2ac4e2b6,False,outro,llm
+C03,91d696370490d901858c8492475a2cde,False,outro,llm
+C03,c6bb1a10758cdaa2fe37ca7ef0cff013,False,outro,llm
+C03,b8673dff4ba9a2c5aeeb95132ac2c290,False,outro,llm
+C03,be317df15f36129440beec0be43f8238,False,outro,llm
+C03,37f28046783d7b6d54578b697c2329d7,False,outro,llm
+C03,64cacc89305e0912e5fda3b529259827,False,outro,llm
+C03,89eb58b7ff90809edde58e481f84ca58,False,outro,llm
+C03,f84393990a3fe178c2c2a737443b3321,False,outro,llm
+C03,6a29a5e02abc1e171bf8a62ca5233dd7,False,outro,llm
+C03,7bb78e948e41b874c3f863133138dd74,False,outro,llm
+C03,94e479842ae319e503c581402c8b6aea,False,outro,llm
+C03,5a168c07ffcf24bb0ce4a01a2caa42cc,False,outro,llm
+C03,cdfd642a991f9a54bf46efe28d9bc3a2,True,outro,llm
+C03,1b9ae90b92424d13df56371a987f9da6,False,outro,llm
+C03,e006eb514938bee8082fb2d3bf719495,False,outro,llm
+C03,f29c994912885f6509c0e7f64210d3a7,False,outro,llm
+C03,561499c465cd289afee13e35bd185de0,False,outro,llm
+C03,c210f534b715417a658401f4d527c95b,False,outro,llm
+C03,815cff546bb55bcfada78d3fc5b984b4,False,outro,llm
+C03,6fda2ba296fcdff6acdc3cfd7d2deadb,False,outro,llm
+C03,b3e872bf70b6b54f82b468147ad1319d,False,outro,llm
+C03,3c6984372c74a8f5547fa868267cbfe4,False,outro,llm
+C03,a7311582692d9983369ba5e4ca83b59b,False,outro,llm
+C03,f01d1292f0cdd12b184e7e0c49528da2,False,outro,llm
+C03,5d916bcb012ff0608d514f210df5ffbb,False,outro,llm
+C03,21ec5f0217404c4c345fae172187b4e3,False,outro,llm
+C03,19dd5005f77dcb74f0536f6643f35567,False,outro,llm
+C03,90b2ad5d1a442aa5578dc94edbf95296,False,outro,llm
+C03,caaf0fd00c0f129dd0471585f60503d6,False,outro,llm
+C03,9259b1bd08a61ddc8a5039fc72b329e7,False,outro,llm
+C03,976bb499880eb3830b527dfa58758c94,False,outro,llm
+C04,74f5b4fc518d612fa146edec86a20865,False,outro,llm
+C04,014bb9d880369a341aec44c060de24d5,False,outro,llm
+C04,38cb604d90f631376468ec83a8b2b764,False,outro,llm
+C04,0efebc2c5add22c5b45867716919dcdd,False,outro,llm
+C04,c0e1bbeec590fe39a9e7e18e539f3266,True,outro,llm
+C04,e9437f222a0cff21585dee3b415de864,False,outro,llm
+C04,9eddce65a39ebef2765cc8e97a983218,False,outro,llm
+C04,3c15004ee749e593c6ee0613d1c96d86,False,outro,llm
+C04,1f3ea7696ab23b0f7decfc29ffab4f7d,False,outro,llm
+C04,10b73c782535c2ca6f5df1188f3785a6,False,outro,llm
+C04,120b9f660082345f7b6c269276da0d98,False,outro,llm
+C04,f1c7cab6b857dd3499f816131a004cec,False,outro,llm
+C04,d13b6eac039f05fb842fef49244a6b21,False,outro,llm
+C04,82c12f6fb9119fac3cd53f6bf78e8da2,False,outro,llm
+C04,2646476fb6542e99dbee28e60db96981,False,outro,llm
+C04,dd01a4c582db226b64ef6bcbdd97924f,False,outro,llm
+C04,25b2debdb819fe30c18b25bf826450a0,False,outro,llm
+C04,a011e3b892c81a6d8f538cf5ab7b3bb8,False,outro,llm
+C04,92a7f43308fa7aeda4798915f615f86b,False,outro,llm
+C04,a9d014b2f44502bb1256522c16b9f960,False,outro,llm
+C04,0272d07f5d34a8c3d31272e7ff967e7b,False,outro,llm
+C04,68f04219e1d6468fb32f28f729268d77,True,outro,llm
+C04,0b675fa55c2d552f90a5b15c6b57654e,False,outro,llm
+C04,36f3b92a47c2b2539d5b510e8a8c4f2d,False,outro,llm
+C04,ef5a41c50217f8e2b9296db3ba78f11e,False,outro,llm
+C04,2aef0e303fcde31d9a5e0e9567e4a170,False,outro,llm
+C04,e464991d0f321fecfe2efce20c77ad10,False,outro,llm
+C04,8b360dcf344ee2b2221a3912e3b88d36,False,outro,llm
+C04,0579071440b305d4c96ac69c3ff26f0e,False,outro,llm
+C04,1390d86a9bf2cb9f1b5e9fecb290ad45,False,outro,llm
+C04,cc6171e3dc8df3e32b1b755f826aa0d5,False,outro,llm
+C04,2d417014efe259d9ec75a3be19e7ef59,False,outro,llm
+C04,ecb6b9a3c286d466970273e6c19da042,False,outro,llm
+C04,dbc34097c70956a41292d463896793d0,False,outro,llm
+C04,69049b97da1868d57b4cdd1394bd7fba,False,outro,llm
+C04,b0319c16620bae9000357087e29442ac,False,outro,llm
+C05,ef88bf0898749f5fd8eff75d58ccb2a5,True,outro,llm
+C05,cab30d2de557d70f29f4f979cdc3b788,False,outro,llm
+C05,840257883f9664e315f38949ac0b17aa,False,outro,llm
+C05,9e038041863f149240bb866e11316fee,False,outro,llm
+C05,48473f056dbedf83a49b22fb0dd16805,False,outro,llm
+C05,6a25a7a0f2ffd1d176b4c99a04e0f19d,False,outro,llm
+C05,9278edf50f49290f93eb6d13640b5cf0,False,outro,llm
+C05,2d474ab2e43fbed75a3893384c8148c6,False,outro,llm
+C05,8240e1b32761dd226e5d63dbee7fa6ce,False,outro,llm
+C05,99768d5f5ef555679f5989a75f3e928d,False,outro,llm
+C05,98468746db98792b45d823d00f5b5c2f,False,outro,llm
+C05,14d4e8a0d5be060b3fe0f442b1f110ac,False,outro,llm
+C05,abb6136be971d03feb72019ff59767e4,False,outro,llm
+C05,339f415dc2f387f3503135ab195b8f10,False,outro,llm
+C05,aa283de1dd7ee3cfdf420524b43a7d0a,False,outro,llm
+C05,9352f19035d656aef93b9fd726b2d596,False,outro,llm
+C05,1a5c5edf288ea674d7b722e02a8dca91,False,outro,llm
+C05,4008e282c4e7be174f3ef178dc788945,False,outro,llm
+C05,00ce8865795823c7ceb6234fc4e046ed,False,outro,llm
+C05,3b414288c372edf633fc654aff5aa11f,False,outro,llm
+C05,244635eb26a07088f6df3f091912a33f,False,outro,llm
+C05,598fa9bcc04d9747eacf69671e2afb87,False,outro,llm
+C05,a81ce1126cdcf346300d91726e034085,False,outro,llm
+C05,cc3b29e7467a6675cc6c751127e43e29,False,outro,llm
+C05,669028f2109abeee623adef035456af7,False,outro,llm
+C05,1bb8c3de5289617bc416d50cb6c65b88,False,outro,llm
+C05,30f2619843ddd4a19bbcb306669d2bf0,False,outro,llm
+C07,544573da1145eaeee673de081a35f604,False,outro,llm
+C07,d5c5e1f1d83b29a144a5ab1154aa47ba,False,outro,llm
+C07,b9787ea6385fee0d5336537995f0cb22,False,outro,llm
+C07,776d33870337b0be2bf06b4c5064315e,False,outro,llm
+C07,c2029c4b060f6f25e6f6a44f2c49d429,False,outro,llm
+C07,96257dac843dada7faadd847356fdc35,False,outro,llm
+C07,3eacad17243a8f2b31dbd153b04b7c35,False,outro,llm
+C07,3efde455a70acf9ae06ff5d508ec843e,False,outro,llm
+C07,216c748e504c4bc25804d97340c9e27c,False,outro,llm
+C07,861175a5e38bebf3688f03a155d6641b,False,outro,llm
+C07,2b52f4801fb04a5770d2b7c5d17e8405,False,outro,llm
+C07,f3bc6d3869328395995e1a4b161bd1b5,False,outro,llm
+C07,c77f6d4280a8c8321bfae3fee82ad3b8,False,outro,llm
+C07,b3b6ef5323a51ec7923681c3d8be69fa,False,outro,llm
+C07,44bb8c2ad3bb9c2bb3552a034eeffc4c,False,outro,llm
+C07,fac073871253f255b8dde914c3372684,False,outro,llm
+C07,0a9e80c9d8a805691c15f1ae633c0715,False,outro,llm
+C07,bde00e65e166bd68a4d229b512137b4b,False,outro,llm
+C07,d84d15d9f16d5a88428efb4c67105239,False,outro,llm
+C07,a88858023254484537713d133565c405,False,outro,llm
+C07,5b8a574df3ba5dba0fe009c3b1a1c717,False,outro,llm
+C07,cef75bd9c68c4985cf1ab56e370f88e1,False,outro,llm
+C07,9fad6fbc2af35bb5a33b7e72b78a447e,False,outro,llm
+D03,12833392c4967ef074c159c5a681513d,False,outro,llm
+D03,43ee51779c7908176f3d05f6b9ce569a,False,outro,llm
+D03,d9234d5977f0208cc36f906038b2f61b,False,outro,llm
+D03,c63d0c2aad4dc91deaeaf65478de1ad8,False,outro,llm
+D03,e5bb8ab7f296fa60732ab58f43f945e6,False,outro,llm
+D03,532bf4ee6c724f36e8869b7bfa39d4dc,False,outro,llm
+D03,c2dd2028732714abdd149d53733b8a9e,False,outro,llm
+D03,e760456fee18b5d7ef6ab72b15c29b7d,False,outro,llm
+D03,a1947712704f80d836f2271af277e5e1,False,outro,llm
+D03,be5a9eec72af0d099d07636f3ceaaf01,False,outro,llm
+D03,daf6f0b7c153fa0cc1689f28000ec087,False,outro,llm
+D03,15fa2777d5ba15537d0cfea3fc458b35,False,outro,llm
+D03,c4840b4b962b68618ddf9dc656882bfe,False,outro,llm
+D03,bcb20a21f6925aaa0e084fff9fd35875,False,outro,llm
+D03,877d1a0da869f4c09cb88ca2eddf3066,False,outro,llm
+D03,9a17ad5180e758678a42a436a69797a8,True,outro,llm
+D03,f5d636531a6d87470d211f7b64bd7b1f,False,outro,llm
+D03,df40fa92b61bc641eec28061fdec8ffe,False,outro,llm
+D03,ea2b24411e2c17df45c337fa81188115,True,outro,llm
+D03,6698b8cb16ed759ce466fefa70c941b7,False,outro,llm
+D03,a134ee03b6c804e3b967f901932a4c4f,False,outro,llm
+D03,17cb92836635f20656a6abaeb06df150,False,outro,llm
+D03,e8a7de56575f45bfff67b585209c037f,True,outro,llm
+D03,82b8166fdca73fe94e058e71346eae97,True,outro,llm
+D03,ef3905df6593f5fa7faebc82fb85e2e6,True,outro,llm
+D03,853350b029b9f93b256373868d2cb13a,True,outro,llm
+D03,82f3a196037c648dfef09c4d7c0e3624,True,outro,llm
+D03,0b8a229441c9f988b05c02777ec47684,True,outro,llm
+D03,2a9abdb1649e49ce1f77d67eaff655e8,True,outro,llm
+D03,2ffc2ade450891ee599e068c9a95314b,True,outro,llm
+D03,8b360dcf344ee2b2221a3912e3b88d36,True,outro,llm
+D03,4d73575fe3ab5f088811b7343adcefde,True,outro,llm
+D03,efc15ba9ebc809fba2604db677503367,True,outro,llm
+D03,77bb1cf61b23d884784c7b481fb06183,True,outro,llm
+D03,c7529aedca55328be0bfaa8f20d87ff2,False,outro,llm
+D03,304e03576b9fa1029971df6192b4e2a4,True,outro,llm
+D03,d999efbe30333f72b2fcf3a37df5a41b,True,outro,llm
+D04,f52c8058817a332008a3c374318bf70c,False,outro,llm
+D04,f0b29dcdd31d25bc3023b8c823a2dc69,False,outro,llm
+D04,e2ef15f7e4530d14985b64b27913f99b,False,outro,llm
+D04,39e3220236b9d66fb03ab618ed8e3477,False,outro,llm
+D04,ea38158dab891e619d3226c31cc60e2f,False,outro,llm
+D04,f5eb1bfaedfb54f0f5ec776936172343,False,outro,llm
+D04,d6e63615fc8f13a124b540d8e154a492,False,outro,llm
+D04,de01904cf74808ba87e1df65f7882ef0,False,outro,llm
+D04,c535fb13da25357afc4ce89ae58b8573,False,outro,llm
+D04,8af510702b70e7f87055b09d33e9b197,False,outro,llm
+D04,7994a347d0e9f242b59fed402399182a,False,outro,llm
+D04,2e85094a5645024b6f09f5516bc704bf,False,outro,llm
+D04,ce68db80d80267c04096e59a65a6b18f,False,outro,llm
+D04,f6853e4f1d0f639a934b661f2787aa6f,False,outro,llm
+D04,bfb4d7f7e81154ccdccb9ac0edbfa2bd,False,outro,llm
+D04,14c3dacba0817e8565029701ff4ed917,False,outro,llm
+D04,69c6002c32816bf3303198f82a69791d,False,outro,llm
+D04,7f45121d39a6318dff3f2fef124e542a,False,outro,llm
+D04,6698b8cb16ed759ce466fefa70c941b7,False,outro,llm
+D04,93a47bc31400c0c932fa8723b40bef1c,False,outro,llm
+D04,19de8a2ae12fc1763c7eea95c3289d95,True,outro,llm
+D04,bcbaf47417d614f8c7af9799a3737529,True,outro,llm
+D04,faf9562f00cc9e7c091b667170e215fb,True,outro,llm
+D04,6a11203d05f191b3e0af7363ca15f7b6,True,outro,llm
+D04,a7205ba9f4515ded74acbc6e45a7666b,False,outro,llm
+D04,356452100e1dc9532738515511105910,True,outro,llm
+D04,4cc9dc5e78a908ca19d6cfb03dd31a0d,True,outro,llm
+D04,b99e7f4fc3de5e12aed206077480211f,True,outro,llm
+D04,bfd1c687738141ef5861a1a1269ca855,True,outro,llm
+D04,fb273933480c85e5897cea81904ce534,True,outro,llm
+D04,b40a6984937cc251558d24d0b5caa929,True,outro,llm
+D04,e6c8f2ab517ef19dd0a02a771fecc827,True,outro,llm
+D04,7ac95e81e19aa093cbe5665847a50e42,True,outro,llm
+D04,19957a288ebfd29d809f70e6a9d7bbdc,True,outro,llm
+D04,208dbc60bf7f8a8da8388d32666b1194,True,outro,llm
+D04,d3aa317bb6664d1d8a9520fa6c0c294f,False,outro,llm
+D04,3b6d3f0e034fcff7497e3574a5d917f7,True,outro,llm
+D05,12833392c4967ef074c159c5a681513d,False,outro,llm
+D05,07760ed45a7e0fb0ed4910abdd1e0633,False,outro,llm
+D05,d5c7388593ddba629a12da0c6fad21ef,False,outro,llm
+D05,c63d0c2aad4dc91deaeaf65478de1ad8,False,outro,llm
+D05,daf5683ba626432f809d05c4373dfb60,False,outro,llm
+D05,80e867a9c488688eb78b4f76d5e3c9f0,False,outro,llm
+D05,57d201836315373b1358795786bd900f,False,outro,llm
+D05,98a56dbf0d1a0abfd6da7b3be8099ac8,False,outro,llm
+D05,5c409bd8eb8ac6e2258791be03989ced,False,outro,llm
+D05,cef052586f5bf37e1d8e7b2c881a78cc,False,outro,llm
+D05,966f6cfaa586d5f69bd81911ea671d5e,False,outro,llm
+D05,e1cf0c64e02aeaec7b25ecc0747335c2,False,outro,llm
+D05,2c9ae0c43aefa89ab90ad6ba20b32a02,False,outro,llm
+D05,801b85d8529718addf3352ea962e89f5,False,outro,llm
+D05,cc4b60e2e0c73a6682012c9047fbbc2f,False,outro,llm
+D05,4ad91181d6ae3a26d1cbf009c0f2662e,False,outro,llm
+D05,67b483feff73ec0d62976546fd962d9b,False,outro,llm
+D05,136463ae3844928f9f275f177bbc2430,False,outro,llm
+D05,d58e4a045e87101c547aa0eeb1c0424c,True,outro,llm
+D05,3ee6185e2f5131927f4458b739852daf,False,outro,llm
+D05,e6668684f52954d7cb8496970a9df88b,False,outro,llm
+D05,314617e3a6f2618f364509fffa147152,False,outro,llm
+D05,14cbbea2e30fe43f59e2dfb0a22edd80,False,outro,llm
+D05,25797d45a4e622c827ed6511a8e2aaf0,False,outro,llm
+D05,fb7754a572dc6779cd15cd6a1c7aad75,False,outro,llm
+D05,f5099975334fb13b41a5759142820bde,True,outro,llm
+D05,018e39b7dbe872fd3b7b9ea07fe6a9bd,False,outro,llm
+D05,84d9fd6356552de8fd9d037bd72a4909,False,outro,llm
+D05,ba6a12b671f9e6d5f0dbed1f77b9c3d2,False,outro,llm
+D05,1e39301e37ad6658793dfe56c6e0c077,False,outro,llm
+D05,07a7ae412ae1dbf9c10e23bc9d88af54,False,outro,llm
+D05,a0f9d1b9035d2a65c729a9ac2e9dad60,False,outro,llm
+D05,2d0a07007cc84621a2bc694505be4036,False,outro,llm
+D05,8bbdf91a176b4c6910f4b4999fb13580,False,outro,llm
+D05,11dd2574e3c196f01017e4df55614b90,False,outro,llm
+D07,a2ff43c289a097fdcb1c22e40811b152,True,outro,llm
+D07,60ef633993197390978284101385bbf7,False,outro,llm
+D07,2c9aede258bfe12708c681efce41aecf,True,outro,llm
+D07,fc1fd2d7ac6ff894b3d39cf4c3904891,False,outro,llm
+D07,afe145761370de1d87d294e31e8610be,True,outro,llm
+D07,217c82e96cff6b77a652bc921b7b7261,True,outro,llm
+D07,863e8c12e8ad5311b2e45d997f638985,True,outro,llm
+D07,e1bb98031fdbad2498accce1ce402b63,True,outro,llm
+D07,e96fc274949171b17a9e498d8d03c4e6,True,outro,llm
+D07,1b0a9f3e943a85b452e1b628170ae368,True,outro,llm
+D07,6bade5d69be67c19936ee92838b09dd2,False,outro,llm
+D07,f8f7f02bb2354462e17705268f1e6d52,False,outro,llm
+D07,601269563463601b0b1b1f09bea7d013,False,outro,llm
+D07,981009b78d18c9dc540bcb86f314d95a,False,outro,llm
+D07,87e21aae14dbe4dd3d5916d23fe3b68f,False,outro,llm
+D07,ff8b888d506efbff7946a52199fabcc5,True,outro,llm
+D07,3c1a06e4289787526a37bf3144821415,True,outro,llm
+D07,e557142a4ddec2da000524356935a479,True,outro,llm
+D07,8ece67ef2fba7422912f47a9b5765ba9,True,outro,llm
+D07,9983b13b1075042219e24083c7398b07,True,outro,llm
+D07,6b9ba3df6357af05d391fe4f35524289,True,outro,llm
+D07,8706f84435f362c8a2556ed81374cf5a,True,outro,llm
+D07,0b9740c80aede334780599d37387228c,True,outro,llm
+D07,d6e63615fc8f13a124b540d8e154a492,False,outro,llm
+D07,f5eb1bfaedfb54f0f5ec776936172343,True,outro,llm
+D07,4444fe0edba3e738b77390b757c60f1a,True,outro,llm
+D07,2e1d71fce98b42bf6cbdd5e06798c286,True,outro,llm
+D07,38cb604d90f631376468ec83a8b2b764,True,outro,llm
+D07,16ff561a4a5f3bb1ee46a1c5f6b3be51,False,outro,llm
+D07,0a2cc8dc7a5ae82067704d1574fb61a7,True,outro,llm
+D07,2d4eb0f8a568e9388cd7ecdc4dc7e7de,True,outro,llm
+D07,f10427ecc3996f727bdc822ab1bd2152,True,outro,llm
+D07,7c8154d29d239b02ad0e8f2dcdf3261a,True,outro,llm
+D07,a7e8a7308b20e80a1874e80615e80b8f,True,outro,llm
+D07,45021d0f98478d3f99fb2b67db8db63e,True,outro,llm
+D07,bbe45b8782c123d652f8ed8563928efc,True,outro,llm
+D07,f5b0bef3321132757017f8b91651d6ab,True,outro,llm
+D07,528785db65c6445df1d15acc64599f89,True,outro,llm
+D07,e7bdc78c5f75abf94b8b1ef5c588352f,True,outro,llm
+D07,ea26fabc9c138718949ed5138c76d625,True,outro,llm
+D07,7e63d7013f0ea6a35c9773fde4e01e2a,True,outro,llm
+D08,da51f4dad4464f71a5ca197a3bdb5aa1,False,outro,llm
+D08,7c4c2d10a57d4aab58a570a5a8ac9f2c,False,outro,llm
+D08,0fc42b14539f4177f534382d69d82d3c,False,outro,llm
+D08,64a446030f8a7b06ee8f3294f8d19dc0,True,outro,llm
+D08,cc7aa30132ae7195c15ac60a6d96f63d,False,outro,llm
+D08,072133dc43d0fd76a78b665fa716b140,False,outro,llm
+D08,a94eee8faad95408cd413c7cd3d1caa0,False,outro,llm
+D08,3aa725d1ae40668294f8a90e9623721b,False,outro,llm
+D08,a1e9b5056896b01638a5aa8e02673955,False,outro,llm
+D08,749634b31da39a7bdbb942b55b28b5b2,False,outro,llm
+D08,261ea274929dde34c70d4effc988d8dd,False,outro,llm
+D08,bde9690c5e5c3b960a58b1114b007753,False,outro,llm
+D08,c27e122fd5da1aa3c9b9f801dcd68ece,False,outro,llm
+D08,0ccb35b372d5c137ebd2bd7d41321bf7,False,outro,llm
+D08,de4eb6567aa2e5ee7be5ee1e86623ebe,False,outro,llm
+D08,93070d6a76f6affb41c1e64d7fc6230f,False,outro,llm
+D08,7ab72bb2d462f6fdfc74545ab07eb428,False,outro,llm
+D08,b06b6b70fd7e089fb20063250e384aae,False,outro,llm
+D08,35d70a9ae74fa7c6bc01125f3ef0f04b,False,outro,llm
+D08,a13c02af2ff8a8966852d3c22cdc86dd,False,outro,llm
+D08,936fd10bc22780d0a101902ab2ca1e64,False,outro,llm
+D08,13cf6f0d70a196ec1c85971f51331729,True,outro,llm
+D08,e593ff561ceb2354396d8b1c57df7e7e,True,outro,llm
+D08,ab796da379bad664fa884f34711b0ca8,True,outro,llm
+D08,61e48bb37f97cabb5ea66190d4bb4c06,True,outro,llm
+D08,501a5d46d38283fca6dc821199b04d33,True,outro,llm
+D08,d4b69480410bad9425dcc77c728ae6c2,True,outro,llm
+D08,e5f9f233ad844f06a1b8243e8fb8d5d6,True,outro,llm
+D08,bbc9edca9201147163dbedff68bf423f,True,outro,llm
+D08,4e8c86732da5e01d040d145bc894e7c8,True,outro,llm
+D08,1bf2b9a92e76901b24965acd9cf95e66,True,outro,llm
+D08,21e11915fe7895e67c14168a01902c12,True,outro,llm
+D08,1bbbb803de6ca4dc1c410c1c9c8c1479,True,outro,llm
+D08,1948b6e258774c3447aa22b55460c9f7,True,outro,llm
+D08,f232484fad9b800a82f690fa16bb7a06,True,outro,llm
+D08,53e572e9f1cc469aee9a7d41e08250b7,True,outro,llm
+D08,970153b7d53ecdcddb670dff7e7aa3a7,True,outro,llm
+D09,57565aad0f6bb04c826f9376a9d64cbf,False,nenhum,llm
+D09,a210b49f209b44c805f4d11476234daa,False,nenhum,llm
+D09,91fbe15eeb18665edc18c42fd3cf058d,False,nenhum,llm
+D09,8b80c267f4defd196be570155c27178f,False,nenhum,llm
+D09,e60b971ce68c4adf0e7b4d7d175af8eb,False,nenhum,llm
+D09,a0ba97ce98f76cf57bb2c5530513be70,False,nenhum,llm
+D09,aee72c0f293739ab9450a25d7966c5b1,False,nenhum,llm
+D09,bc0cb825943cd13e0447764252fd7128,False,nenhum,llm
+D09,e661e2175953b47a82c7fd5c39d67cff,False,nenhum,llm
+D09,81c9de806ad085621924f80cd2c65a1f,False,nenhum,llm
+D09,ca2fb34d8c9fc880f0f94dde4b17e8e3,False,nenhum,llm
+D09,e062dd9138333bd59f3e383c8c5b4010,False,nenhum,llm
+D09,87e21aae14dbe4dd3d5916d23fe3b68f,False,nenhum,llm
+D09,981009b78d18c9dc540bcb86f314d95a,False,nenhum,llm
+D09,639b6ff102425079163a51ebe2d84e3e,False,nenhum,llm
+D09,740da8caefd71c1e39dfbe4fbf732176,False,nenhum,llm
+D09,4dbc2eb4d867bf794e05e22363d906dc,False,nenhum,llm
+D09,8b5bfc7edc0b66eb0d0bf300123c60ff,False,nenhum,llm
+D09,61fb8f6e27df0ad40e77267b0939df9d,False,nenhum,llm
+D09,339f415dc2f387f3503135ab195b8f10,False,nenhum,llm
+D09,a6ae1375e10c5bd2f0984336dbfaf998,False,nenhum,llm
+D09,5467d200779dc6c7336aaf7f5f908f51,False,nenhum,llm
+D09,6996e2de80d04c25e8bb8a3543a91262,False,nenhum,llm
+D09,3ab03633e6a91362727eca61d63c33a0,True,nenhum,llm
+D09,60f0fa11f17e0381045e616db9a421bb,True,nenhum,llm
+D09,a324e2993e5b0066052397a2acd046b5,True,nenhum,llm
+D09,b9677c5ecaf9a9030e9ce79b23539688,True,nenhum,llm
+D09,0414e00a0d61eb06d42d29e5c33e398d,True,nenhum,llm
+D09,f172caf26676f837f787028f92418fc5,True,nenhum,llm
+D09,0d322bcc61875aa8332aa2c4b85d7704,True,nenhum,llm
+D09,0adb024a177058e12ac896e9cc3dc8f5,True,nenhum,llm
+D09,52c58b112be6091c59eaea5e5342c6ac,True,nenhum,llm
+D09,9e777134822164c128bef9faee9dbb84,True,nenhum,llm
+D09,713ddaca33912145bba4761947770a7c,True,nenhum,llm
+D09,e77850099311b49ea0b071b69550bef4,True,nenhum,llm
+D09,8dd2317c9475c83320fdc3ec7b544c8f,True,nenhum,llm
+D09,596d61fe7868db117cac73884580a85e,True,nenhum,llm
+D09,1a7154b5812fe074449cb5ffb03d862d,True,nenhum,llm
+D09,2337fd6b94a35c4487548c80ee945bfa,True,nenhum,llm
+D09,efe49f1d6f951dd88b51e6ccd4cc548f,True,nenhum,llm
+D09,211600709625ca0053fc9dbaa2ab2cc0,True,nenhum,llm
+D09,2015db117969611f3b471e50385a90e2,True,nenhum,llm
+D09,50a97079bab9b08502ac7ad2d962ae78,True,nenhum,llm
+D09,4834290e28c650c35dd108b6013c5da1,True,nenhum,llm
+D09,e60f7c53e511e1d78b48da11ef6907d0,True,nenhum,llm
+D09,a28a06c28497c38c8670c1a95e58f3bd,True,nenhum,llm
+D09,cecc8de850678fe00c8341dcf782fcac,True,nenhum,llm
+D10,0dc1d6d30937792cf1e8b53fc802f1fc,False,outro,llm
+D10,31236b5a5c4fc4cd5051953a0ee8157c,True,outro,llm
+D10,3295c59b29255af591790b625af52934,False,outro,llm
+D10,25c24a4f1e8f164338530c178b5a2f51,True,outro,llm
+D10,d322c3ce8acfdb77982ca62d7e886a34,False,outro,llm
+D10,dac28a1e41813fdc8e5deb1861b1226b,False,outro,llm
+D10,b1c15cdd488ed584235e3cea64780456,False,outro,llm
+D10,bb967c8f6d0190722a2293375fbc5cac,False,outro,llm
+D10,a17167de7adc918714639a750d4f6af9,True,outro,llm
+D10,eade9034437b6986904e7f5ed42f2db7,False,outro,llm
+D10,23ee6bc2492808dca0e807e131ec9aeb,False,outro,llm
+D10,7994a347d0e9f242b59fed402399182a,False,outro,llm
+D10,08684202004f18aad861d4a702f1348b,False,outro,llm
+D10,3781417bb4787186604439f7e8e665df,False,outro,llm
+D10,2b88756e010de39180de9b9496f64dbb,False,outro,llm
+D10,d93fca76c7c43c1e8dfb767524c6e75f,False,outro,llm
+D10,2bdcda8fb9ef01e83108995c62ae693d,False,outro,llm
+D10,3aa725d1ae40668294f8a90e9623721b,False,outro,llm
+D10,38a982cbe0fc0d4815c0ec8f582ad35c,False,outro,llm
+D10,069dc026c6488922de824865c7249425,True,outro,llm
+D10,c49f8ca7175b35fe1c3eb029cd4ed6b9,False,outro,llm
+D10,509d46601d4939c6b4e063d289c968a2,False,outro,llm
+D10,73edaf1721e09a886dc35f885caa254a,True,outro,llm
+D10,936fd10bc22780d0a101902ab2ca1e64,True,outro,llm
+D10,ff0907325dad0c0a623b94ce7c9ea7fe,False,outro,llm
+D10,997ba4853e4c4f2bdda080eb9346f3db,True,outro,llm
+D10,c70f661829da37bccaeda6bcb6aed01e,True,outro,llm
+D10,b074929472f2721ce6382ef631ac7b5f,False,outro,llm
+D10,97b1c66cd7fc0a9e984d1435de5189be,False,outro,llm
+D10,866b71725cc8f2b54830ea14fe6c92b7,True,outro,llm
+D10,034fff9d15616ad687256f58a057f4f4,False,outro,llm
+D10,2ee2b576d576d98fb1402a4dd36784d9,False,outro,llm
+D10,f065fc6c8703c41424e316207f5261af,False,outro,llm
+D10,17b252dcc35632f2e08a3a8edd5dd88c,False,outro,llm
+D10,4b14b9bb96003ba08d0fff814c4506e6,True,outro,llm
+D10,072133dc43d0fd76a78b665fa716b140,True,outro,llm
+D10,37c35442208c3077f15ff19e742e0c3e,False,outro,llm
+D10,b0aa160effc1874975ae8c4ebda3e5ad,True,outro,llm
+D10,3ffed17f5010b9c6d33706b790732482,False,outro,llm
+D10,c6d02e0d596955917b3a1956afd19362,True,outro,llm
+D10,665ee7f03f5892d8f1eb3b6c3a7a1dd4,True,outro,llm
+D10,e6d997a9eefec8b38ace473c14e35c11,True,outro,llm
+D10,f9d9e910e3321e4730fc205691d4dc4e,True,outro,llm
+D10,49cb1b45e23f07f438b471464c97be39,False,outro,llm
