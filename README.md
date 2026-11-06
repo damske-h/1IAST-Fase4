@@ -2,6 +2,8 @@
 
 > **Tech Challenge · Fase 4 | Pós-Tech FIAP | AI Scientist**
 
+**Equipe:** Lucas Damasceno da Cunha Lima (RM372040)
+
 Um RAG sobre as reviews de clientes do [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
 O analista pergunta em linguagem natural ("quais as reclamações de atraso em SP no
 primeiro semestre de 2018?") e recebe uma resposta em que **cada afirmação cita as
@@ -30,6 +32,11 @@ injection), **bloqueia** antes de chamar o LLM. Cada decisão fica num log de au
 - [Decisões de projeto](#decisões-de-projeto)
 - [Limitações conhecidas](#limitações-conhecidas)
 - [Dicionário de campos da base](#dicionário-de-campos-da-base)
+
+**Notas técnicas em `docs/`:** [pipeline RAG](docs/pipeline_rag.md) (nós, contratos e
+parâmetros), [segurança e LGPD](docs/seguranca.md) (camadas de defesa e log de
+auditoria) e [protocolo de avaliação](docs/avaliacao.md) (gold set, sistemas, métricas e
+pendências).
 
 ## Problema de negócio
 
@@ -138,6 +145,7 @@ Toda saída de LLM passa por `with_structured_output` com schemas Pydantic. O LL
 │   ├── experimento.py #  ConfigAvaliacao, cache, juízes e métricas
 │   └── demo.py       #   apoio da demo: recursos, filtros e tabelas da tela
 ├── avaliacao/        # gold set e respostas da avaliação (versionados: reprodução sem custo)
+├── docs/             # notas técnicas: pipeline, segurança e protocolo de avaliação
 ├── app.py            # demo em Streamlit (streamlit run app.py)
 ├── tests/            # testes com pytest (modelo falso: rodam sem baixar nada)
 ├── pyproject.toml    # pacote voc_rag e dependências

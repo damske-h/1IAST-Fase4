@@ -8,7 +8,7 @@
 3. **saída**: a resposta tem schema Pydantic e só pode citar `review_id` recuperados.
 
 Detectores por padrão são a primeira camada, nunca a única: têm falso positivo
-e falso negativo (notebook 04, Seção 2).
+e falso negativo (notebook 04, Seção 3).
 """
 import hashlib
 import math
