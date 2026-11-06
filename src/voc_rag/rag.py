@@ -1,4 +1,4 @@
-"""O RAG inteiro como um grafo de estados com LangGraph (LangChain aula 05).
+"""O RAG inteiro como um grafo de estados com LangGraph.
 
     guardrail ─bloqueada──────────────────────────────────────────────┐
         │                                                             │
@@ -9,8 +9,8 @@
                     └─────────────> gerar ────────────────────────────┘
 
 Cada nó devolve só o que mudou; a `trilha` e os `avisos` se acumulam pelo
-reducer (operator.add), como no `EstadoAtendimento` da aula 05. O nó `auditar`
-grava uma linha JSON por pergunta, com hash e decisões, nunca o texto (IA Gen aula 06).
+reducer (operator.add). O nó `auditar`
+grava uma linha JSON por pergunta, com hash e decisões, nunca o texto (LGPD).
 
 Uso pela linha de comando:
     python -m voc_rag.rag "Quais as reclamações sobre atraso na entrega?"

@@ -1,4 +1,4 @@
-"""Guardrail de entrada: PII, prompt injection e política como código (IA Gen aula 06).
+"""Guardrail de entrada: PII, prompt injection e política como código.
 
 É a primeira camada da defesa em profundidade do RAG:
 1. **entrada** (este módulo): bloqueia PII, injeção e tópicos proibidos e valida
@@ -86,7 +86,7 @@ def hash_dado(texto):
 
 # --- Seção 2: prompt injection ------------------------------------------------------------
 PADROES_INJECAO = [
-    # os padrões da IA Gen aula 06
+    # frases clássicas de injeção, em português e inglês
     (r"ignore\s+(as|todas\s+as|minhas)?\s*instru", "pt: 'ignore as instruções'"),
     (r"desconsidere\s+(tudo|o\s+que|as\s+instru)", "pt: 'desconsidere tudo'"),
     (r"esque[cç]a\s+(tudo|suas\s+regras|o\s+que)", "pt: 'esqueça suas regras'"),

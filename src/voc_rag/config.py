@@ -28,11 +28,11 @@ ARQUIVOS = {
     "traducao": "product_category_name_translation.csv",
 }
 
-# --- Parâmetros do pipeline (IA Gen aula 02) ----------------------------------
+# --- Parâmetros do pipeline ---------------------------------------------------
 MODELO_EMBEDDINGS = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 LIMITE_CHUNK = 400      # caracteres; reviews acima disso seriam divididas
 TAMANHO_LOTE = 64       # textos por lote no encode (memória x velocidade)
-RRF_K = 60              # constante do RRF; 60 é o valor do artigo original e da aula 02
+RRF_K = 60              # constante do RRF; 60 é o valor do artigo original (Cormack et al., 2009)
 PROFUNDIDADE_FUSAO = 50 # candidatos de cada busca que entram na fusão híbrida
 MIN_PALAVRAS_EVIDENCIA = 3  # reviews com menos palavras não servem de evidência citada
 LIMIAR_EVIDENCIA = 0.55 # similaridade mínima do top-1 para haver evidência (provisório, Etapa 3)

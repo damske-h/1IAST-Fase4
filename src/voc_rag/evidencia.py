@@ -10,7 +10,8 @@ A busca sempre devolve um top-k, mesmo quando nada ali responde a pergunta
    ("entrega por drone"), em que a similaridade fica alta só pelo vocabulário.
 
 Se sobrarem menos de `MIN_EVIDENCIAS`, o RAG recusa (requisito 4 do TC4).
-As reviews entram no prompt do juiz delimitadas, como dado (IA Gen aula 06).
+As reviews entram no prompt do juiz delimitadas, como dado: um texto plantado
+numa review não vira instrução.
 """
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field

@@ -1,13 +1,12 @@
-"""Multi-Query: o LLM reformula a consulta e o Buscador roda cada versão (LangChain aula 03).
+"""Multi-Query: o LLM reformula a consulta e o Buscador roda cada versão.
 
 Uma pergunta curta ou vaga ("boleto") recupera mal, porque as reviews dizem a
 mesma coisa com outras palavras ("paguei o boleto e o pedido não foi liberado").
 O LLM gera variações; cada uma passa pela busca híbrida; o RRF funde os
 rankings. Uma review que aparece bem em várias formulações sobe.
 
-Diferença para a aula 03: lá as variações vêm em texto livre, uma por linha, e
-um regex limpa a numeração. Aqui o LLM responde no schema `Variacoes` (Pydantic),
-sem parsing frágil.
+As variações não vêm em texto livre, uma por linha, limpas por regex: o LLM
+responde no schema `Variacoes` (Pydantic), sem parsing frágil.
 """
 import time
 

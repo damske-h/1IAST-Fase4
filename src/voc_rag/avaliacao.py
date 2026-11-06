@@ -1,6 +1,6 @@
 """Checagem rápida da recuperação: precisão@k com julgamento por padrões de texto.
 
-Inspirada na avaliação da IA Gen aula 02 (recall@k e latência). Aqui não há um
+Mede o que importa numa busca: acerto no top-k e latência. Aqui não há um
 gabarito com "o documento certo": numa pergunta como "o pedido não chegou",
 centenas de reviews são relevantes. Então julgamos cada review do top-k com uma
 expressão regular sobre o `texto_lexical` (o que conta como "fala do tema").

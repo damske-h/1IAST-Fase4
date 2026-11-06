@@ -1,8 +1,8 @@
-"""Roteador: a pergunta em linguagem natural vira intenção + consulta + filtros (LangChain aula 02).
+"""Roteador: a pergunta em linguagem natural vira intenção + consulta + filtros.
 
-Como o `RoteadorSuporte` da aula 02, o LLM é obrigado a responder no schema
+O LLM é obrigado a responder no schema
 Pydantic `Roteamento` via `with_structured_output`. Três cuidados a mais:
-- a pergunta entra **delimitada** em <pergunta>, como dado (IA Gen aula 03);
+- a pergunta entra **delimitada** em <pergunta>, como dado, não como instrução;
 - o que o LLM devolve é conferido contra a base: categoria inventada é descartada;
 - se o LLM falhar, o RAG segue sem filtros em vez de quebrar.
 """
