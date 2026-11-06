@@ -1,4 +1,4 @@
-"""Geração da resposta com citações obrigatórias e checadas (LangChain aula 02 · IA Gen aula 06).
+"""Geração da resposta com citações obrigatórias e checadas.
 
 O LLM responde no schema `RespostaGerada`: cada afirmação traz os `review_id`
 que a sustentam. Depois, o código confere o que o schema não garante:

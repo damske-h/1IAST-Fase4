@@ -1,4 +1,4 @@
-"""Criação do LLM de chat, com fallback entre provedores (LangChain aulas 03 e 05).
+"""Criação do LLM de chat, com fallback entre provedores.
 
 A chave fica no `.env` da raiz do projeto (fora do git; modelo em `.env.example`).
 `LLM_PROVIDER` aceita 'google', 'openai' ou 'auto' (padrão): tenta o Gemini e cai

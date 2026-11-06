@@ -1,4 +1,4 @@
-"""Contratos de dados do RAG com Pydantic (LangChain aulas 02 e 04).
+"""Contratos de dados do RAG com Pydantic.
 
 O Pydantic garante a **estrutura**: tipos, faixas e campos permitidos. Ele não
 detecta intenção maliciosa (isso é o `guardrails`), mas impede que uma entrada

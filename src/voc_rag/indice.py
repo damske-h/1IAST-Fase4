@@ -1,4 +1,4 @@
-"""Índice vetorial da base de conhecimento: embeddings + FAISS (IA Gen aula 02).
+"""Índice vetorial da base de conhecimento: embeddings + FAISS.
 
 O caro é gerar os embeddings; montar um índice FAISS *flat* com 40 mil
 vetores leva milissegundos. Por isso gravamos só os embeddings (.npy), a
@@ -34,7 +34,7 @@ def carregar_modelo(nome=MODELO_EMBEDDINGS):
 def gerar_embeddings(modelo, textos, tamanho_lote=TAMANHO_LOTE, mostrar_progresso=False):
     """Uma matriz (n_textos x dimensão), float32, com cada linha de norma 1.
 
-    Normalizar faz o produto interno virar similaridade do cosseno (PLN aula 04).
+    Normalizar faz o produto interno virar similaridade do cosseno.
     """
     vetores = modelo.encode(list(textos), batch_size=tamanho_lote, normalize_embeddings=True,
                             show_progress_bar=mostrar_progresso, convert_to_numpy=True)

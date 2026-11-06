@@ -1,11 +1,11 @@
-"""Os sistemas comparados na avaliação: a baseline B0 e as hipóteses H1 a H4.
+"""Os sistemas comparados na avaliação: a baseline B0 e as hipóteses H1 a H5.
 
-Como no protocolo de avaliação (e nos notebooks de Deep Learning), cada sistema
-muda uma variável em relação ao anterior, para o ganho ter causa conhecida:
+Como manda o protocolo de avaliação, cada sistema muda uma variável em relação
+ao anterior, para o ganho ter causa conhecida:
 
 | Sistema | Busca | Multi-Query | Filtros (roteador) | Recusa | Chamadas ao LLM |
 |---|---|---|---|---|---|
-| B0 | vetorial (aula 02) | não | não | só no prompt | 1 |
+| B0 | vetorial | não | não | só no prompt | 1 |
 | H1 | híbrida BM25 + vetorial | não | não | só no prompt | 1 |
 | H2 | híbrida | sim | não | só no prompt | 2 |
 | H3 | híbrida | sim | sim | prompt + roteador (fora de escopo) | 3 |
@@ -16,7 +16,7 @@ H5 nasceu da análise de erro da rodada dev: o H4 recusava agulhas mesmo com a
 review certa no top-10, porque exigia 2 evidências e a agulha só tem uma. H5 venceu
 no dev e virou o padrão do RAG (`config.MIN_EVIDENCIAS = 1`); o H4 fica fixo em 2.
 
-B0 a H3 usam o gerador da aula 02: responde só com as reviews, cita os ids e
+B0 a H3 usam o gerador simples: responde só com as reviews, cita os ids e
 recusa pelo próprio prompt. As citações saem como o LLM escreveu, sem filtro,
 para a avaliação medir quantas são inválidas. H4 é o grafo do `rag.py`, que soma o
 guardrail de entrada (sem LLM), a checagem de evidência e a validação das citações.
@@ -41,7 +41,7 @@ from voc_rag.llm import _mascarar_segredos
 from voc_rag.schemas import Pergunta, Ponto
 
 SISTEMAS = {
-    "B0": "baseline da aula 02: busca vetorial e recusa no prompt",
+    "B0": "baseline: busca vetorial e recusa no prompt",
     "H1": "B0 + busca híbrida (BM25 + vetorial com RRF)",
     "H2": "H1 + Multi-Query",
     "H3": "H2 + roteador com filtros por metadado",
@@ -52,7 +52,7 @@ SISTEMAS = {
 CHAMADAS_POR_PERGUNTA = {"B0": 1, "H1": 1, "H2": 2, "H3": 3, "H4": 4, "H5": 4}
 
 
-# --- Gerador da baseline (aula 02) ------------------------------------------------------
+# --- Gerador da baseline ---------------------------------------------------------------
 class RespostaSimples(BaseModel):
     """Saída do gerador de B0 a H3: a recusa é decidida pelo próprio LLM."""
 
@@ -78,7 +78,7 @@ def criar_gerador_simples(llm):
 
 
 def _gerar_simples(gerador, pergunta, recuperados):
-    """Gera com o prompt da aula 02. Citações ficam como vieram: a avaliação as confere."""
+    """Gera com o prompt simples. Citações ficam como vieram: a avaliação as confere."""
     if len(recuperados) == 0:
         return {"status": "recusada", "resumo": MENSAGEM_RECUSA}
     bruta = gerador.invoke({"pergunta": pergunta, "contexto": formatar_contexto(recuperados)})

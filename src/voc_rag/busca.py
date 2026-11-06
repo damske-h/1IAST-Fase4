@@ -1,4 +1,4 @@
-"""Recuperação: BM25, busca vetorial e a fusão híbrida com RRF (IA Gen aula 02).
+"""Recuperação: BM25, busca vetorial e a fusão híbrida com RRF.
 
 - BM25 (lexical) acerta termos exatos e palavras raras.
 - Vetorial (semântica) acerta paráfrases.
@@ -23,7 +23,7 @@ MODOS = ("vetorial", "bm25", "hibrida")
 
 # --- BM25 ---------------------------------------------------------------------------
 def tokenizar_lexical(texto):
-    """Tokenização simples para o BM25: minúsculas + palavras alfanuméricas (IA Gen aula 02)."""
+    """Tokenização simples para o BM25: minúsculas + palavras alfanuméricas."""
     return re.findall(r"[a-z0-9À-ÿ\-]+", texto.lower())
 
 
@@ -53,7 +53,7 @@ class IndiceBM25:
 
 # --- Fusão ---------------------------------------------------------------------------
 def rrf(rankings, k=RRF_K):
-    """Reciprocal Rank Fusion: funde rankings somando 1/(k + posição) (IA Gen aula 02)."""
+    """Reciprocal Rank Fusion: funde rankings somando 1/(k + posição)."""
     pontos = {}
     for ranking in rankings:
         for posicao, idx in enumerate(ranking):

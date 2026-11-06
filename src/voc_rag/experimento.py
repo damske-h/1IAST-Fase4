@@ -1,7 +1,6 @@
 """A avaliação como experimento: configuração, cache das respostas, juízes e métricas.
 
-Segue o protocolo de avaliação do projeto (molde da IA Gen aula 02, seção 5, e dos
-notebooks de Deep Learning): baseline congelada, hipóteses comparadas, métricas
+Segue o protocolo de avaliação do projeto: baseline congelada, hipóteses comparadas, métricas
 fixadas antes de rodar, teste trancado e análise de erro.
 
 **Reprodutível sem custo.** Rodar os 5 sistemas e os juízes nas 60 perguntas custa
